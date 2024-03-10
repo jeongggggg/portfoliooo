@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flat table</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/common_mobile.js"></script>
+    <script src="./js/item_list.js"></script>
+    <script src="./js/index_mobile.js"></script>
+    <link rel="stylesheet" href="./css/index_mobile.css">
+    <link rel="stylesheet" href="./css/common_mobile.css">
+    <link rel="shortcut icon" href="./img_ft/icon_logo/favi.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="wrap" class="wrap">
+        <div class="w_480" id="w_480">
+            <div class="ham_pan">
+                <img src="./img_ft/icon_logo/slide_close.png" alt="햄버거 닫기 버튼" id="ham_close">
+                <div class="ham_logo"></div>
+                <div class="join_login_contaienr">
+
+                    <?php session_start();
+                        
+                        if(!isset($_SESSION['NAME'])) {
+                    ?>
+                    <div class="join_login_box login">
+                        <a href="./login_mobile.html">
+                            로그인
+                        </a>
+                    </div>
+                    <div class="join_login_box join">
+                        <a href="./join_mobile.html">
+                            회원가입
+                        </a>
+                    </div>
+                    <?php 
+                        }
+                        else {
+                    ?>
+                    <div class="join_login_box">
+                        <b><?= $_SESSION['NAME'].' 님 환영합니다' ?></b>
+                    </div>
+                    <div class="join_login_box logout">
+                        <a href="#" onclick="return false">
+                            로그아웃
+                        </a>
+                    </div>
+                    <?php
+                        }
+                    ?>
+                </div>
+                <div class="ham_icon_box">
+                    <div class="ham_icon">
+                        <img src="./img_ft/icon_logo/slide_icon01.gif" alt="퀵메뉴버튼">
+                        <p>마이페이지</p>
+                    </div>
+                    <div class="ham_icon">
+                        <img src="./img_ft/icon_logo/slide_icon02.gif" alt="퀵메뉴버튼">
+                        <p>최근본상품</p>
+                    </div>
+                    <div class="ham_icon">
+                        <img src="./img_ft/icon_logo/slide_icon03.gif" alt="퀵메뉴버튼">
+                        <p>주문조회</p>
+                    </div>
+                    <div class="ham_icon">
+                        <img src="./img_ft/icon_logo/slide_icon04.gif" alt="퀵메뉴버튼">
+                        <p>관심상품</p>
+                    </div>
+                    <div class="ham_icon">
+                        <img src="./img_ft/icon_logo/slide_icon05.gif" alt="퀵메뉴버튼">
+                        <p>공지사항</p>
+                    </div>
+                    <div class="ham_icon">
+                        <img src="./img_ft/icon_logo/slide_icon06.gif" alt="퀵메뉴버튼">
+                        <p>구매후기</p>
+                    </div>
+                    <div class="ham_icon">
+                        <img src="./img_ft/icon_logo/slide_icon07.gif" alt="퀵메뉴버튼">
+                        <p>구매문의</p>
+                    </div>
+                    <div class="ham_icon">
+                        <img src="./img_ft/icon_logo/slide_icon08.gif" alt="퀵메뉴버튼">
+                        <p>PC.VER</p>
+                    </div>
+                </div>
+                <div class="ham_category">
+                    <div class="ham_cate_title">카테고리</div>
+                    <div class="ham_category">
+                        <div class="ham_cate">
+                            <p class="ham_cete_line">BEST
+                                <img src="./img_ft/icon_logo/slide_arrowdown.png" alt="펼치기 버튼">
+                            </p>
+                            <!-- <div class="ham_cate_item">
+                                생활가전 베스트
+                            </div>
+                            <div class="ham_cate_item">
+                                프리미엄 가전 베스트
+                            </div>
+                            <div class="ham_cate_item">
+                                1인 가전 모음전
+                            </div>
+                            <div class="ham_cate_item">
+                                득템찬스
+                            </div> -->
+                        </div>
+                        <div class="ham_cate">
+                             <p>NEW
+                                <img src="./img_ft/icon_logo/slide_arrowdown.png" alt="펼치기 버튼">
+                             </p>
+                            <!-- <div class="ham_cate_item">
+                                신규 브랜드 모음전
+                            </div>
+                            <div class="ham_cate_item">
+                                지금 뜨는 이슈 제품
+                            </div>
+                            <div class="ham_cate_item">
+                                난방 가전 HOT 아이템
+                            </div> -->
+                        </div>
+                        <div class="ham_cate">
+                             <p>WOMEN
+                                <img src="./img_ft/icon_logo/slide_arrowdown.png" alt="펼치기 버튼">
+                             </p>
+                            <!-- <div class="ham_cate_item">
+                                <div class="ham_cate_item">
+                                    니트/베스트
+                                </div>
+                                <div class="ham_cate_item">
+                                   가디건
+                                </div>
+                                <div class="ham_cate_item">
+                                   자켓/코트/점퍼
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="ham_cate">
+                             <p>MEN
+                                <img src="./img_ft/icon_logo/slide_arrowdown.png" alt="펼치기 버튼">
+                             </p>
+                            <!-- <div class="ham_cate_item">
+                                정장/수트
+                            </div>
+                            <div class="ham_cate_item">
+                                재킷
+                            </div>
+                            <div class="ham_cate_item">
+                                니트/베스트
+                            </div> -->
+                        </div>
+                        <div class="ham_cate">
+                             <p>LIFE
+                                <img src="./img_ft/icon_logo/slide_arrowdown.png" alt="펼치기 버튼">
+                             </p>
+                            <!-- <div class="ham_cate_item">
+                                건강식품
+                            </div>
+                            <div class="ham_cate_item">
+                                신선식품
+                            </div>
+                            <div class="ham_cate_item">
+                                베이커리/간식
+                            </div>
+                            <div class="ham_cate_item">
+                                간편식
+                            </div> -->
+                        </div>
+                        <div class="ham_cate">
+                             <p>ACC
+                                <img src="./img_ft/icon_logo/slide_arrowdown.png" alt="펼치기 버튼">
+                             </p>
+                            <!-- <div class="ham_cate_item">
+                                카메라/스피커
+                            </div>
+                            <div class="ham_cate_item">
+                                컴퓨터/모바일/키덜트
+                            </div>
+                            <div class="ham_cate_item">
+                                주방가전
+                            </div>
+                            <div class="ham_cate_item">
+                                건강/미용가전
+                            </div>
+                            <div class="ham_cate_item">
+                                생활/계절가전
+                            </div> -->
+                        </div>
+                        <div class="ham_cate">
+                             <p>KITCHEN
+                                <img src="./img_ft/icon_logo/slide_arrowdown.png" alt="펼치기 버튼">
+                             </p>
+                             <!-- <div class="ham_cate_item">
+                                테이블웨어
+                            </div>
+                            <div class="ham_cate_item">
+                                키친웨어
+                            </div>
+                            <div class="ham_cate_item">
+                                침구/침대
+                            </div>
+                            <div class="ham_cate_item">
+                                가구
+                            </div> -->
+                        </div>
+                        <div class="ham_cate">
+                             <p>SALE
+                                <img src="./img_ft/icon_logo/slide_arrowdown.png" alt="펼치기 버튼">
+                             </p>
+                            <!-- <div class="ham_cate_item">
+                                핫딜 모음전
+                            </div>
+                            <div class="ham_cate_item">
+                                인기 세일상품
+                            </div>
+                            <div class="ham_cate_item">
+                                하나 더 1+1
+                            </div>
+                            <div class="ham_cate_item">
+                                득템찬스 기획전
+                            </div> -->
+                        </div>
+                        <div class="ham_cate">
+                            <p>SEASON OFF
+                                <img src="./img_ft/icon_logo/slide_arrowdown.png" alt="펼치기 버튼">
+                            </p>
+                           <!-- <div class="ham_cate_item">
+                               해외명품
+                           </div>
+                           <div class="ham_cate_item">
+                               명품 화장품
+                           </div>
+                           <div class="ham_cate_item">
+                               화장품
+                           </div>
+                           <div class="ham_cate_item">
+                               패션잡화
+                           </div> -->
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 헤더 -->
+            <div class="header">
+                <div class="top_banner">
+                    <img src="./img_ft/top_banner/top_ban_m.jpg" alt="탑배너">
+                    <div class="close_btn">X</div>
+                </div>
+                <!-- 헤더탑 -->
+                <div class="header_bot">
+                    <div class="logo">
+                        <a href="index_mobile.html"></a>
+                    </div>
+                    <div class="header_hamberg" id="ham_open">
+                    </div>
+                    <div class="header_search"></div>
+                    <div class="header_cart">
+                        <span>0</span>
+                    </div>
+                </div>
+                <div class="nav">
+                    <div class="nav_area">
+                        <ul class="nav_ul">
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=0">BEST</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=1">NEW</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=2">WOMEN</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=3">MEN</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=4">LIFE</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=5">ACC</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=6">KITCHEN</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=7">SALE</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=8">SEASON OFF</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=9">EVENT</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=1">LOOKBOOK</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=2">BRAND</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main">
+
+                <div class="main_banner">   
+                    <div class="m_b m_b1">
+                        <img src="./img_ft/main_banner/main_m01.jpg" alt="메인배너">
+                    </div>
+                    <div class="m_b m_b2">
+                        <img src="./img_ft/main_banner/main_m02.jpg" alt="메인배너">
+                    </div>
+                    <div class="m_b m_b3">
+                        <img src="./img_ft/main_banner/main_m03.jpg" alt="메인배너">
+                    </div>
+                    <div class="m_b m_b4">
+                        <img src="./img_ft/main_banner/main_m04.jpg" alt="메인배너">
+                    </div>
+                    <div class="mb_btn_slide" id="mb_slide_btn_L"></div>
+                    <div class="mb_btn_slide" id="mb_slide_btn_R"></div>
+                    <div class="indi_box">
+                        <div class="indi indi_active"></div>
+                        <div class="indi"></div>
+                        <div class="indi"></div>
+                        <div class="indi"></div>
+                    </div>
+                </div>
+
+                <div class="sec1_container main_padding">
+                    <div class="sec1_item_L">
+                        <div class="sec1_L_top">
+                            <div class="sec1_L_top_L sec1_L_top_box">
+                                <div class="o_pan">
+                                    VIEW DETAIL
+                                </div>
+                            </div>
+                            <div class="sec1_L_top_R sec1_L_top_box">
+                                <div class="o_pan">
+                                    VIEW DETAIL
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec1_L_bot">
+                            <img src="./img_ft/sec1_banner/ban_event03.jpg" alt="첫번째 구역의 배너">
+                        </div>
+                    </div>
+        
+                    <div class="sec1_item_R">
+                        <div class="sec1_item_R_pan">
+                            <div class="R_pan">
+                                <div class="R_pan_img">
+                                    <img src="./img_ft/sec1_banner/ban_event04_01.jpg" alt="슬라이드 이미지">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec1_item_R_pan">
+                            <div class="R_pan">
+                                <div class="R_pan_img">
+                                    <img src="./img_ft/sec1_banner/ban_event04_02.jpg" alt="슬라이드 이미지">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec1_item_R_pan">
+                            <div class="R_pan">
+                                <div class="R_pan_img">
+                                    <img src="./img_ft/sec1_banner/ban_event04_03.jpg" alt="슬라이드 이미지">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec1_btn_slide" id="sec1_slide_btn_L"></div>
+                        <div class="sec1_btn_slide" id="sec1_slide_btn_R"></div>
+                    </div>
+                </div>
+
+                <div class="sec2_container">
+                    <div class="sec2_title">
+                        <div class="sec2_mini_title">
+                            쇼핑몰 추천상품 모음
+                        </div>
+                        <div class="sec2_main_title">
+                            RECOMMEND ITEMS
+                        </div>
+                    </div>
+                    <div class="sec2_btn_box">
+                        <div class="sec2_btn sec2_btn_active">
+                            #한달동안 가장 많이 팔린 제품
+                            <div class="carrot carrot_active"></div>
+                        </div>
+                        <div class="sec2_btn">
+                            #상품평이 가장 좋은 제품
+                            <div class="carrot"></div>
+                        </div>
+                    </div>
+                    <div class="sec2_tab_box">
+                        <div class="sec2_tab sec2_tab1 sec2_tab_active">
+                            <ul class="sec2_item_ul">
+                                <li class="sec2_item_li">
+                                    <img src="./img_ft/product/1.jpg" alt="추천상품이미지">
+                                    <div class="sec2_o_pan">
+                                        <div class="sec2_o_title">
+                                            VIEW DETAIL
+                                        </div>
+                                        <div class="sec2_o_desc">
+                                            상품의 상세내용을 확인하세요
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="sec2_item_li sec2_m_r0">
+                                    <img src="./img_ft/product/2.jpg" alt="추천상품이미지">
+                                    <div class="sec2_o_pan">
+                                        <div class="sec2_o_title">
+                                            VIEW DETAIL
+                                        </div>
+                                        <div class="sec2_o_desc">
+                                            상품의 상세내용을 확인하세요
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="sec2_item_li">
+                                    <img src="./img_ft/product/3.jpg" alt="추천상품이미지">
+                                    <div class="sec2_o_pan">
+                                        <div class="sec2_o_title">
+                                            VIEW DETAIL
+                                        </div>
+                                        <div class="sec2_o_desc">
+                                            상품의 상세내용을 확인하세요
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="sec2_item_li sec2_m_r0">
+                                <img src="./img_ft/product/4.jpg" alt="추천상품이미지">
+                                    <div class="sec2_o_pan">
+                                        <div class="sec2_o_title">
+                                            VIEW DETAIL
+                                        </div>
+                                        <div class="sec2_o_desc">
+                                            상품의 상세내용을 확인하세요
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sec2_tab sec2_tab2">
+                            <ul class="sec2_item_ul">
+                                <li class="sec2_item_li">
+                                    <img src="./img_ft/product/9.jpg" alt="추천상품이미지">
+                                    <div class="sec2_o_pan">
+                                        <div class="sec2_o_title">
+                                            VIEW DETAIL
+                                        </div>
+                                        <div class="sec2_o_desc">
+                                            상품의 상세내용을 확인하세요
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="sec2_item_li sec2_m_r0">
+                                    <img src="./img_ft/product/10.jpg" alt="추천상품이미지">
+                                    <div class="sec2_o_pan">
+                                        <div class="sec2_o_title">
+                                            VIEW DETAIL
+                                        </div>
+                                        <div class="sec2_o_desc">
+                                            상품의 상세내용을 확인하세요
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="sec2_item_li">
+                                    <img src="./img_ft/product/11.jpg" alt="추천상품이미지">
+                                    <div class="sec2_o_pan">
+                                        <div class="sec2_o_title">
+                                            VIEW DETAIL
+                                        </div>
+                                        <div class="sec2_o_desc">
+                                            상품의 상세내용을 확인하세요
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="sec2_item_li sec2_m_r0">
+                                    <img src="./img_ft/product/12.jpg" alt="추천상품이미지">
+                                    <div class="sec2_o_pan">
+                                        <div class="sec2_o_title">
+                                            VIEW DETAIL
+                                        </div>
+                                        <div class="sec2_o_desc">
+                                            상품의 상세내용을 확인하세요
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mid_banner_box">
+                    <div class="mid_b">
+                        <img src="./img_ft/mid_banner/ban_event05_01.jpg" alt="중간배너이미지">
+                    </div>
+                    <div class="mid_b">
+                        <img src="./img_ft/mid_banner/ban_event05_02.jpg" alt="중간배너이미지">
+                    </div>
+                    <div class="mid_b">
+                        <img src="./img_ft/mid_banner/ban_event05_03.jpg" alt="중간배너이미지">
+                    </div>
+                    <div class="mid_indi_box">
+                        <div class="mid_indi mid_indi_active"></div>
+                        <div class="mid_indi"></div>
+                        <div class="mid_indi"></div>
+                    </div>
+                </div>
+
+                <div class="sec3_container">
+                    <div class="sec3_title">
+                        <div class="sec3_mini_title">
+                            이달의 신상품 모음
+                        </div>
+                        <div class="sec3_main_title">
+                            NEW ARRIVALS
+                        </div>
+                    </div>
+                    <div class="sec3_item_box">
+                        <div class="sec3_item">
+                            <a href="item_mobile.html?cate_no=1&item_no=29">
+                                <div class="sec3_item_img">
+                                    <img src="./img_ft/product/29.jpg" alt="상품 이미지">
+                                    <div class="like_box">LIKE 0</div>
+                                </div>
+                                <div class="sec3_item_title">
+                                    스테레오 블루투스 헤드셋
+                                </div>
+                                <div class="sec3_item_line">
+                                    <div class="sec3_item_line2"></div>
+                                </div>
+                                <div class="sec3_item_desc">
+                                    최고의 사운드를 제공하는 무선 헤드셋
+                                </div>
+                                <div class="sec3_item_o_price">
+                                    <del>70,000원</del>
+                                </div>
+                                <div class="sec3_item_s_price">
+                                    55,900원
+                                </div>
+                                <div class="color_box">
+                                    <div class="red_box"></div>
+                                    <div class="White _box"></div>
+                                    <div class="gray_box"></div>
+                                    <div class="black_box"></div>
+                                </div>
+                                <div class="event_box">
+                                    <div class="sale_img"></div>
+                                    <div class="best_img"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec3_item sec3_m_r0">
+                            <a href="item_mobile.html?cate_no=0&item_no=13">
+                                <div class="sec3_item_img">
+                                    <img src="./img_ft/product/13.jpg" alt="상품 이미지">
+                                    <div class="like_box">LIKE 0</div>
+                                    <div class="sec3_item_sale">
+                                        25%
+                                    </div>
+                                </div>
+                                <div class="sec3_item_title">
+                                    깔끔한 블루투스 헤드폰
+                                </div>
+                                <div class="sec3_item_line">
+                                    <div class="sec3_item_line2"></div>
+                                </div>
+                                <div class="sec3_item_desc">
+                                    어디에나 어울리는 디자인
+                                </div>
+                                <div class="sec3_item_o_price">
+                                    <del>59,500원</del>
+                                </div>
+                                <div class="sec3_item_s_price">
+                                    39,500원
+                                </div>
+                                <div class="color_box">
+                                    <div class="red_box"></div>
+                                    <div class="white_box"></div>
+                                    <div class="gray_box"></div>
+                                    <div class="black_box"></div>
+                                </div>
+                                <div class="event_box">
+                                    <div class="sale_img"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec3_item">
+                            <a href="item_mobile.html?cate_no=0&item_no=3">
+                                <div class="sec3_item_img">
+                                    <img src="./img_ft/product/10.jpg" alt="상품 이미지">
+                                    <div class="like_box">LIKE 0</div>
+                                </div>
+                                <div class="sec3_item_title">
+                                    유선 이어폰
+                                </div>
+                                <div class="sec3_item_line">
+                                    <div class="sec3_item_line2"></div>
+                                </div>
+                                <div class="sec3_item_desc">
+                                    줄꼬임없이 편하게 사용 가능한 유선 이어폰
+                                </div>
+                                <div class="sec3_item_o_price">
+                                    <del>30,000원</del>
+                                </div>
+                                <div class="sec3_item_s_price">
+                                    20,000원
+                                </div>
+                                <div class="color_box">
+                                    <div class="red_box"></div>
+                                    <div class="White _box"></div>
+                                    <div class="gray_box"></div>
+                                    <div class="black_box"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec3_item sec3_m_r0">
+                            <a href="item_mobile.html?cate_no=0&item_no=16">
+                                <div class="sec3_item_img">
+                                    <img src="./img_ft/product/16.jpg" alt="상품 이미지">
+                                    <div class="like_box">LIKE 0</div>
+                                </div>
+                                <div class="sec3_item_title">
+                                    스포츠 방수 시계
+                                </div>
+                                <div class="sec3_item_line">
+                                    <div class="sec3_item_line2"></div>
+                                </div>
+                                <div class="sec3_item_desc">
+                                    100% 방수가 되는 편리한 스포츠 시계
+                                </div>
+                                <div class="sec3_item_o_price">
+                                    <del>59,500원</del>
+                                </div>
+                                <div class="sec3_item_s_price">
+                                    39,500원
+                                </div>
+                                <div class="color_box">
+                                    <div class="red_box"></div>
+                                    <div class="White _box"></div>
+                                    <div class="gray_box"></div>
+                                    <div class="black_box"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec3_item">
+                           <a href="item_mobile.html?cate_no=0&item_no=1">
+                            <div class="sec3_item_img">
+                                <img src="./img_ft/product/1.jpg" alt="상품 이미지">
+                                <div class="like_box">LIKE 0</div>
+                            </div>
+                            <div class="sec3_item_title">
+                            스포티 워치
+                            </div>
+                            <div class="sec3_item_line">
+                                <div class="sec3_item_line2"></div>
+                            </div>
+                            <div class="sec3_item_desc">
+                                스포티한 디자인으로 활동성을 보여주는 워치
+                            </div>
+                            <div class="sec3_item_o_price">
+                                <del>70,000원</del>
+                            </div>
+                            <div class="sec3_item_s_price">
+                                50,000원
+                            </div>
+                            <div class="color_box">
+                                <div class="red_box"></div>
+                                <div class="White _box"></div>
+                                <div class="gray_box"></div>
+                                <div class="black_box"></div>
+                            </div>
+                           </a>
+                        </div>
+                        <div class="sec3_item sec3_m_r0">
+                            <a href="item_mobile.html?cate_no=0&item_no=5">
+                                <div class="sec3_item_img">
+                                    <img src="./img_ft/product/5.jpg" alt="상품 이미지">
+                                    <div class="like_box">LIKE 0</div>
+                                </div>
+                                <div class="sec3_item_title">
+                                    샤오미 솔라 LS05 스마트워치
+                                </div>
+                                <div class="sec3_item_line">
+                                    <div class="sec3_item_line2"></div>
+                                </div>
+                                <div class="sec3_item_desc">
+                                    다양한 기능이 탑재된 샤오미의 신상 스마트워치
+                                </div>
+                                <div class="sec3_item_o_price">
+                                    <del>59,500원</del>
+                                </div>
+                                <div class="sec3_item_s_price">
+                                    39,500원
+                                </div>
+                                <div class="color_box">
+                                    <div class="red_box"></div>
+                                    <div class="White _box"></div>
+                                    <div class="gray_box"></div>
+                                    <div class="black_box"></div>
+                                </div>
+                                <div class="event_box">
+                                    <div class="best_img"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sec4_container">
+                    <div class="sec4_title">
+                        <div class="sec4_mini_title">
+                            에디터 추천상품
+                        </div>
+                        <div class="sec4_main_title">
+                            EDITOR'S PICK
+                        </div>
+                    </div>
+                    <div class="sec4_item_box">
+                        <div class="sec4_item">
+                            <a href="item_mobile.html?cate_no=0&item_no=8">
+                                <div class="sec4_item_img">
+                                    <img src="./img_ft/product/8.jpg" alt="상품 이미지">
+                                    <div class="like_box">LIKE 0</div>
+                                    <div class="sec4_item_sale">
+                                        6%
+                                    </div>
+                                </div>
+                                <div class="sec4_item_title">
+                                    심플한 샤워기 헤드
+                                </div>
+                                <div class="sec4_item_line">
+                                    <div class="sec4_item_line2"></div>
+                                </div>
+                                <div class="sec4_item_desc">
+                                    질리지 않는 자동 살균 샤워기 헤드
+                                </div>
+                                <div class="sec4_item_o_price">
+                                    <del>39,500원</del>
+                                </div>
+                                <div class="sec4_item_s_price">
+                                    29,500원
+                                </div>
+                                <div class="color_box">
+                                    <div class="red_box"></div>
+                                    <div class="White _box"></div>
+                                    <div class="gray_box"></div>
+                                    <div class="black_box"></div>
+                                </div>
+                                <div class="event_box">
+                                    <div class="sale_img"></div>
+                                    <div class="best_img"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec4_item sec4_m_r0">
+                            <a href="item_mobile.html?cate_no=0&item_no=11">
+                                <div class="sec4_item_img">
+                                    <img src="./img_ft/product/11.jpg" alt="상품 이미지">
+                                    <div class="like_box">LIKE 0</div>
+                                </div>
+                                <div class="sec4_item_title">
+                                    블루투스 헤드셋
+                                </div>
+                                <div class="sec4_item_line">
+                                    <div class="sec4_item_line2"></div>
+                                </div>
+                                <div class="sec4_item_desc">
+                                    화이트 색상의 깔끔한 블루투스 헤드셋
+                                </div>
+                                <div class="sec4_item_o_price">
+                                    <del>79,500원</del>
+                                </div>
+                                <div class="sec4_item_s_price">
+                                    69,500원
+                                </div>
+                                <div class="color_box">
+                                    <div class="red_box"></div>
+                                    <div class="White _box"></div>
+                                    <div class="gray_box"></div>
+                                    <div class="black_box"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec4_item">
+                            <a href="item_mobile.html?cate_no=0&item_no=18">
+                                <div class="sec4_item_img">
+                                    <img src="./img_ft/product/18.jpg" alt="상품 이미지">
+                                    <div class="like_box">LIKE 0</div>
+                                </div>
+                                <div class="sec4_item_title">
+                                    스마트 공기청정기
+                                </div>
+                                <div class="sec4_item_line">
+                                    <div class="sec4_item_line2"></div>
+                                </div>
+                                <div class="sec4_item_desc">
+                                    미세먼지 많은 날 깨끗한 공기
+                                </div>
+                                <div class="sec4_item_o_price">
+                                    <del>119,500원</del>
+                                </div>
+                                <div class="sec4_item_s_price">
+                                    89,500원
+                                </div>
+                                <div class="color_box">
+                                    <div class="red_box"></div>
+                                    <div class="White _box"></div>
+                                    <div class="gray_box"></div>
+                                    <div class="black_box"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec4_item sec4_m_r0">
+                            <a href="item_mobile.html?cate_no=0&item_no=20">
+                                <div class="sec4_item_img">
+                                    <img src="./img_ft/product/20.jpg" alt="상품 이미지">
+                                    <div class="like_box">LIKE 0</div>
+                                </div>
+                                <div class="sec4_item_title">
+                                    블루투스 마우스
+                                </div>
+                                <div class="sec4_item_line">
+                                    <div class="sec4_item_line2"></div>
+                                </div>
+                                <div class="sec4_item_desc">
+                                    선없이 깔끔한 광역 블루투스 마우스
+                                </div>
+                                <div class="sec4_item_o_price">
+                                    <del>59,500원</del>
+                                </div>
+                                <div class="sec4_item_s_price">
+                                    39,500원
+                                </div>
+                                <div class="color_box">
+                                    <div class="red_box"></div>
+                                    <div class="White _box"></div>
+                                    <div class="gray_box"></div>
+                                    <div class="black_box"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec4_item">
+                            <a href="item_mobile.html?cate_no=0&item_no=6">
+                                <div class="sec4_item_img">
+                                    <img src="./img_ft/product/6.jpg" alt="상품 이미지">
+                                    <div class="like_box">LIKE 0</div>
+                                </div>
+                                <div class="sec4_item_title">
+                                    애플워치3 시리즈
+                                </div>
+                                <div class="sec4_item_line">
+                                    <div class="sec4_item_line2"></div>
+                                </div>
+                                <div class="sec4_item_desc">
+                                    껄끔하고 모던한 스마트 워치
+                                </div>
+                                <div class="sec4_item_o_price">
+                                    <del>209,500원</del>
+                                </div>
+                                <div class="sec4_item_s_price">
+                                    159,500원
+                                </div>
+                                <div class="color_box">
+                                    <div class="red_box"></div>
+                                    <div class="White _box"></div>
+                                    <div class="gray_box"></div>
+                                    <div class="black_box"></div>
+                                </div>
+                                <div class="event_box">
+                                    <div class="best_img"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec4_item sec4_m_r0">
+                            <a href="item_mobile.html?cate_no=0&item_no=2">
+                                <div class="sec4_item_img">
+                                    <img src="./img_ft/product/2.jpg" alt="상품 이미지">
+                                    <div class="like_box">LIKE 0</div>
+                                </div>
+                                <div class="sec4_item_title">
+                                    전자 면도기
+                                </div>
+                                <div class="sec4_item_line">
+                                    <div class="sec4_item_line2"></div>
+                                </div>
+                                <div class="sec4_item_desc">
+                                    저소음으로 깔끔하게 밀리는 전자 면도기
+                                </div>
+                                <div class="sec4_item_o_price">
+                                    <del>89,500원</del>
+                                </div>
+                                <div class="sec4_item_s_price">
+                                    69,500원
+                                </div>
+                                <div class="color_box">
+                                    <div class="red_box"></div>
+                                    <div class="White _box"></div>
+                                    <div class="gray_box"></div>
+                                    <div class="black_box"></div>
+                                </div>
+                                <div class="event_box">
+                                    <div class="sale_img"></div>
+                                    <div class="best_img"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec4_item">
+                            <a href="item_mobile.html?cate_no=0&item_no=4">
+                                <div class="sec4_item_img">
+                                    <img src="./img_ft/product/4.jpg" alt="상품 이미지">
+                                    <div class="like_box">LIKE 0</div>
+                                </div>
+                                <div class="sec4_item_title">
+                                    블루투스 이어폰
+                                </div>
+                                <div class="sec4_item_line">
+                                    <div class="sec4_item_line2"></div>
+                                </div>
+                                <div class="sec4_item_desc">
+                                    잡음 없이 깔끔한 사운드의 블루투스 이어폰
+                                </div>
+                                <div class="sec4_item_o_price">
+                                    <del>30,500원</del>
+                                </div>
+                                <div class="sec4_item_s_price">
+                                    12,000원
+                                </div>
+                                <div class="color_box">
+                                    <div class="red_box"></div>
+                                    <div class="White _box"></div>
+                                    <div class="gray_box"></div>
+                                    <div class="black_box"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec4_item sec4_m_r0">
+                            <a href="item_mobile.html?cate_no=0&item_no=9">
+                                <div class="sec4_item_img">
+                                    <img src="./img_ft/product/9.jpg" alt="상품 이미지">
+                                    <div class="like_box">LIKE 0</div>
+                                </div>
+                                <div class="sec4_item_title">
+                                    샤오미 헬로우 스마트밴드
+                                </div>
+                                <div class="sec4_item_line">
+                                    <div class="sec4_item_line2"></div>
+                                </div>
+                                <div class="sec4_item_desc">
+                                    심플하고 가벼운 스마트워치
+                                </div>
+                                <div class="sec4_item_o_price">
+                                    <del>99,500원</del>
+                                </div>
+                                <div class="sec4_item_s_price">
+                                    49,500원
+                                </div>
+                                <div class="color_box">
+                                    <div class="red_box"></div>
+                                    <div class="White _box"></div>
+                                    <div class="gray_box"></div>
+                                    <div class="black_box"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer1">
+                    <div class="footer1_L">
+                        <span class="ft1_1">CS CENTER</span>
+                        <br>
+                        <span class="ft1_2">02.0000.0000</span>
+                        <br>
+                        <span class="ft1_3">
+                            평일 오전 09:30 ~ 오후 6:00
+                            <br>
+					        점심시간 오후 12:00 ~ 오후 1:30
+                            <br>
+					        토, 일, 공휴일 휴무
+                        </span>
+                    </div>
+                    <div class="footer1_R">
+                        <span class="ft2_1">BANK ACCOUNT</span>
+                        <br>
+                        <span class="ft2_2">
+                            농협 1234 - 1234 - 1234
+                            <br>
+                            국민 0000 - 0000 - 0000
+                        </span>
+                        <br>
+                        <span class="ft2_3">예금주 : 조아정</span>
+                    </div>
+                </div>
+                <div class="footer2">
+                    <ul class="ft_top_ul">
+                        <li class="ft_top_li">회사소개</li>
+                        <li class="ft_top_li">이용약관</li>
+                        <li class="ft_top_li">개인정보 처리방침</li>
+                        <li class="ft_top_li">이용안내</li>
+                        <li class="ft_top_li">PC VER.</li>
+                    </ul>
+                </div>
+                <div class="footer3">
+                   <span>상호명 : 플렛테이블 대표 : 조아정</span>
+                   <br>
+                   <span>전화 : 02-000-0000 팩스 : 02-000-0000</span>
+                   <br>
+                   <span>주소 : 서울특별시 동대문구 답십리동</span>
+                   <br>
+                   <span>사업자등록번호 : 000-00-00000</span>
+                   <br>
+                   <span>통신판매업신고 : 신고준비중</span>
+                   <br>
+                   <span> 개인정보관리책임자 : 조아정</span>
+                   <br>
+                   <span>이메일 : cmc3700@naver.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

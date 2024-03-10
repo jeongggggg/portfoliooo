@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./css/common_mobile.css">
+    <link rel="stylesheet" href="./css/login_mobile.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/common_mobile.js"></script>
+    <link rel="shortcut icon" href="./img_ft/icon_logo/favi.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="wrap">
+        <div class="w_480" id="w_480">
+            <div class="ham_pan">
+                <img src="./img_ft/icon_logo/slide_close.png" alt="햄버거 닫기 버튼" id="ham_close">
+                <div class="ham_logo"></div>
+                <div class="join_login_contaienr">
+                    <div class="join_login_box login">
+                        <a href="./login_mobile.html">
+                            로그인
+                        </a>
+                    </div>
+                    <div class="join_login_box join">
+                        <a href="./join_mobile.html">
+                            회원가입
+                        </a>
+                    </div>
+                </div>
+                <div class="ham_icon_box">
+                    <div class="ham_icon">
+                        <img src="./img_ft/icon_logo/slide_icon01.gif" alt="퀵메뉴버튼">
+                        <p>마이페이지</p>
+                    </div>
+                    <div class="ham_icon">
+                        <img src="./img_ft/icon_logo/slide_icon02.gif" alt="퀵메뉴버튼">
+                        <p>최근본상품</p>
+                    </div>
+                    <div class="ham_icon">
+                        <img src="./img_ft/icon_logo/slide_icon03.gif" alt="퀵메뉴버튼">
+                        <p>주문조회</p>
+                    </div>
+                    <div class="ham_icon">
+                        <img src="./img_ft/icon_logo/slide_icon04.gif" alt="퀵메뉴버튼">
+                        <p>관심상품</p>
+                    </div>
+                    <div class="ham_icon">
+                        <img src="./img_ft/icon_logo/slide_icon05.gif" alt="퀵메뉴버튼">
+                        <p>공지사항</p>
+                    </div>
+                    <div class="ham_icon">
+                        <img src="./img_ft/icon_logo/slide_icon06.gif" alt="퀵메뉴버튼">
+                        <p>구매후기</p>
+                    </div>
+                    <div class="ham_icon">
+                        <img src="./img_ft/icon_logo/slide_icon07.gif" alt="퀵메뉴버튼">
+                        <p>구매문의</p>
+                    </div>
+                    <div class="ham_icon">
+                        <img src="./img_ft/icon_logo/slide_icon08.gif" alt="퀵메뉴버튼">
+                        <p>PC.VER</p>
+                    </div>
+                </div>
+                <div class="ham_category">
+                    <div class="ham_cate_title">카테고리</div>
+                    <div class="ham_category">
+                        <div class="ham_cate">
+                            <p class="ham_cete_line">BEST
+                                <img src="./img_ft/icon_logo/slide_arrowdown.png" alt="펼치기 버튼">
+                            </p>
+                            <!-- <div class="ham_cate_item">
+                                생활가전 베스트
+                            </div>
+                            <div class="ham_cate_item">
+                                프리미엄 가전 베스트
+                            </div>
+                            <div class="ham_cate_item">
+                                1인 가전 모음전
+                            </div>
+                            <div class="ham_cate_item">
+                                득템찬스
+                            </div> -->
+                        </div>
+                        <div class="ham_cate">
+                             <p>NEW
+                                <img src="./img_ft/icon_logo/slide_arrowdown.png" alt="펼치기 버튼">
+                             </p>
+                            <!-- <div class="ham_cate_item">
+                                신규 브랜드 모음전
+                            </div>
+                            <div class="ham_cate_item">
+                                지금 뜨는 이슈 제품
+                            </div>
+                            <div class="ham_cate_item">
+                                난방 가전 HOT 아이템
+                            </div> -->
+                        </div>
+                        <div class="ham_cate">
+                             <p>WOMEN
+                                <img src="./img_ft/icon_logo/slide_arrowdown.png" alt="펼치기 버튼">
+                             </p>
+                            <!-- <div class="ham_cate_item">
+                                <div class="ham_cate_item">
+                                    니트/베스트
+                                </div>
+                                <div class="ham_cate_item">
+                                   가디건
+                                </div>
+                                <div class="ham_cate_item">
+                                   자켓/코트/점퍼
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="ham_cate">
+                             <p>MEN
+                                <img src="./img_ft/icon_logo/slide_arrowdown.png" alt="펼치기 버튼">
+                             </p>
+                            <!-- <div class="ham_cate_item">
+                                정장/수트
+                            </div>
+                            <div class="ham_cate_item">
+                                재킷
+                            </div>
+                            <div class="ham_cate_item">
+                                니트/베스트
+                            </div> -->
+                        </div>
+                        <div class="ham_cate">
+                             <p>LIFE
+                                <img src="./img_ft/icon_logo/slide_arrowdown.png" alt="펼치기 버튼">
+                             </p>
+                            <!-- <div class="ham_cate_item">
+                                건강식품
+                            </div>
+                            <div class="ham_cate_item">
+                                신선식품
+                            </div>
+                            <div class="ham_cate_item">
+                                베이커리/간식
+                            </div>
+                            <div class="ham_cate_item">
+                                간편식
+                            </div> -->
+                        </div>
+                        <div class="ham_cate">
+                             <p>ACC
+                                <img src="./img_ft/icon_logo/slide_arrowdown.png" alt="펼치기 버튼">
+                             </p>
+                            <!-- <div class="ham_cate_item">
+                                카메라/스피커
+                            </div>
+                            <div class="ham_cate_item">
+                                컴퓨터/모바일/키덜트
+                            </div>
+                            <div class="ham_cate_item">
+                                주방가전
+                            </div>
+                            <div class="ham_cate_item">
+                                건강/미용가전
+                            </div>
+                            <div class="ham_cate_item">
+                                생활/계절가전
+                            </div> -->
+                        </div>
+                        <div class="ham_cate">
+                             <p>KITCHEN
+                                <img src="./img_ft/icon_logo/slide_arrowdown.png" alt="펼치기 버튼">
+                             </p>
+                             <!-- <div class="ham_cate_item">
+                                테이블웨어
+                            </div>
+                            <div class="ham_cate_item">
+                                키친웨어
+                            </div>
+                            <div class="ham_cate_item">
+                                침구/침대
+                            </div>
+                            <div class="ham_cate_item">
+                                가구
+                            </div> -->
+                        </div>
+                        <div class="ham_cate">
+                             <p>SALE
+                                <img src="./img_ft/icon_logo/slide_arrowdown.png" alt="펼치기 버튼">
+                             </p>
+                            <!-- <div class="ham_cate_item">
+                                핫딜 모음전
+                            </div>
+                            <div class="ham_cate_item">
+                                인기 세일상품
+                            </div>
+                            <div class="ham_cate_item">
+                                하나 더 1+1
+                            </div>
+                            <div class="ham_cate_item">
+                                득템찬스 기획전
+                            </div> -->
+                        </div>
+                        <div class="ham_cate">
+                            <p>SEASON OFF
+                                <img src="./img_ft/icon_logo/slide_arrowdown.png" alt="펼치기 버튼">
+                            </p>
+                           <!-- <div class="ham_cate_item">
+                               해외명품
+                           </div>
+                           <div class="ham_cate_item">
+                               명품 화장품
+                           </div>
+                           <div class="ham_cate_item">
+                               화장품
+                           </div>
+                           <div class="ham_cate_item">
+                               패션잡화
+                           </div> -->
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 헤더 -->
+            <div class="header">
+                <div class="top_banner">
+                    <img src="./img_ft/top_banner/top_ban_m.jpg" alt="탑배너">
+                    <div class="close_btn">X</div>
+                </div>
+                <!-- 헤더탑 -->
+                <div class="header_bot">
+                    <div class="logo">
+                        <a href="index_mobile.html"></a>
+                    </div>
+                    <div class="header_hamberg" id="ham_open">
+                    </div>
+                    <div class="header_search"></div>
+                    <div class="header_cart">
+                        <span>0</span>
+                    </div>
+                </div>
+                <div class="nav">
+                    <div class="nav_area">
+                        <ul class="nav_ul">
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=0">BEST</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=1">NEW</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=2">WOMEN</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=3">MEN</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=4">LIFE</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=5">ACC</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=6">KITCHEN</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=7">SALE</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=8">SEASON OFF</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=9">EVENT</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=1">LOOKBOOK</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="product_mobile.html?cate_no=2">BRAND</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="login_box">
+                    <h2>로그인</h2>
+                    <input type="text" placeholder="아이디를 입력하세요" id="_id" value="flat123">
+                    <input type="password" placeholder="비밀번호를 입력하세요" id="_pw" value="flat123!">
+                    <input type="button" value="로그인" id="login_btn">
+                </div>
+                <div class="join_offer">
+                    <p>아직 회원이 아니신가요?</p>
+                    <p>회원가입을 하시면 다양하고 특별한 혜택이 준비되어 있습니다</p>
+                    <div class="join_offer_btn">
+                        <a href="./join.html">
+                        회원가입
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer1">
+                    <div class="footer1_L">
+                        <span class="ft1_1">CS CENTER</span>
+                        <br>
+                        <span class="ft1_2">02.0000.0000</span>
+                        <br>
+                        <span class="ft1_3">
+                            평일 오전 09:30 ~ 오후 6:00
+                            <br>
+					        점심시간 오후 12:00 ~ 오후 1:30
+                            <br>
+					        토, 일, 공휴일 휴무
+                        </span>
+                    </div>
+                    <div class="footer1_R">
+                        <span class="ft2_1">BANK ACCOUNT</span>
+                        <br>
+                        <span class="ft2_2">
+                            농협 1234 - 1234 - 1234
+                            <br>
+                            국민 0000 - 0000 - 0000
+                        </span>
+                        <br>
+                        <span class="ft2_3">예금주 : 조아정</span>
+                    </div>
+                </div>
+                <div class="footer2">
+                    <ul class="ft_top_ul">
+                        <li class="ft_top_li">회사소개</li>
+                        <li class="ft_top_li">이용약관</li>
+                        <li class="ft_top_li">개인정보 처리방침</li>
+                        <li class="ft_top_li">이용안내</li>
+                        <li class="ft_top_li">PC VER.</li>
+                    </ul>
+                </div>
+                <div class="footer3">
+                   <span>상호명 : 플렛테이블 대표 : 조아정</span>
+                   <br>
+                   <span>전화 : 02-000-0000 팩스 : 02-000-0000</span>
+                   <br>
+                   <span>주소 : 서울특별시 동대문구 답십리동</span>
+                   <br>
+                   <span>사업자등록번호 : 000-00-00000</span>
+                   <br>
+                   <span>통신판매업신고 : 신고준비중</span>
+                   <br>
+                   <span> 개인정보관리책임자 : 조아정</span>
+                   <br>
+                   <span>이메일 : cmc3700@naver.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            function login(){
+                let _id = $('#_id').val();
+                let _pw = $('#_pw').val();
+
+                $.ajax({
+                    url: './php/login.php',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {id:_id, pw:_pw},
+
+                    success: function(data){
+                        // console.log(data.sql)
+                        if(data.r_count == 1){
+                            // alert("환영합니다. " + data.name + "님")
+                            location.href = "index.html";
+                        }
+
+                        else{
+                            alert('일치하는 정보가 없습니다.')
+                        }
+                    },
+                    error: function(request, error){
+                        alert('접속실패')
+                    }
+                }) 
+            }
+
+            $('#login_btn').click(function(){
+                login();
+            })
+        })
+    </script>
+</body>
+</html>

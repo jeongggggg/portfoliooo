@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="shortcut icon" href="./img_ft/icon_logo/favi.ico" type="image/x-icon">
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <!-- 탑배너 -->
+      <div class="top_banner">
+          <img src="./img_ft/top_banner/top_ban.jpg" alt="탑배너">
+          <div class="close_btn">X</div>
+      </div>
+          <!-- 헤더탑 -->
+          <div class="header_top">
+              <div class="w_1220">
+                  <ul class="h_top_left">
+                      <li class="h_top_L_item">
+                          고객센터
+                      </li>
+                      <li class="h_top_L_item">
+                          고객문의
+                      </li>
+                      <li class="h_top_L_item">
+                          커뮤니티
+                      </li>
+                      <li class="h_top_L_item">
+                          <!-- <div class="lank_container">
+                              <div class="lank_box">
+                                  <span class="h_top_lank">1</span>
+                                  주방 가전 20% 할인
+                              </div>
+                              <div class="lank_box">
+                                  <span class="h_top_lank">2</span>
+                                  애플워치 10% 할인
+                              </div>
+                              <div class="lank_box">
+                                  <span class="h_top_lank">3</span>
+                              시그니처 프리미엄 가습기
+                              </div>
+                              <div class="lank_box">
+                                  <span class="h_top_lank">4</span>
+                                  피트니스 워치
+                              </div>
+                              <div class="lank_box">
+                                  <span class="h_top_lank">5</span>
+                                  발뮤다 토스터
+                              </div>
+                          </div> -->
+                      </li>
+                  </ul>
+                  <ul class="h_top_right">
+                      <li class="h_top_R_item">
+                          <a href="./login.html">
+                              로그인
+                          </a>
+                      </li>
+                      <li class="h_top_R_item point_box">
+                          <a href="./join.html">
+                          회원가입
+                          </a>
+                          <div class="point">+3000p</div>
+                      </li>
+                      <li class="h_top_R_item">
+                          주문조회
+                      </li>
+                      <li class="h_top_R_item">
+                          마이쇼핑
+                      </li>
+                      <li class="h_top_R_item">
+                          장바구니
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="header_bot">
+              <div class="logo">
+                  <a href="index.html"></a>
+              </div>
+              <div class="header_search">
+                  <img src="./img_ft/icon_logo/top_search.gif" alt="검색버튼">
+              </div>
+              <div class="header_cart">
+                  <img src="./img_ft/icon_logo/top_cart.gif" alt="장바구니">
+                  <span>0</span>
+              </div>
+          </div>
+          <div class="nav">
+              <ul class="nav_ul">
+                  <li class="hamberg_btn_box">
+                      <div class="line" id="line_top"></div>
+                      <div class="line" id="line_mid"></div>
+                      <div class="line" id="line_bot"></div>
+                  </li>
+                  <li class="nav_li">
+                      <a href="product.html?cate_no=0">BEST</a>
+                  </li>
+                  <li class="nav_li">
+                      <a href="product.html?cate_no=1">NEW</a>
+                  </li>
+                  <li class="nav_li">
+                      <a href="product.html?cate_no=2">WOMEN</a>
+                  </li>
+                  <li class="nav_li">
+                      <a href="product.html?cate_no=3">MEN</a>
+                  </li>
+                  <li class="nav_li">
+                      <a href="product.html?cate_no=4">LIFE</a>
+                  </li>
+                  <li class="nav_li">
+                      <a href="product.html?cate_no=5">ACC</a>
+                  </li>
+                  <li class="nav_li">
+                      <a href="product.html?cate_no=6">KITCHEN</a>
+                  </li>
+                  <li class="nav_li">
+                      <a href="product.html?cate_no=7">SALE</a>
+                  </li>
+                  <li class="nav_li">
+                      <a href="product.html?cate_no=8">SEASON OFF</a>
+                  </li>
+                  <li class="nav_li b_L">
+                      <a href="product.html?cate_no=9">EVENT</a>
+                  </li>
+                  <li class="nav_li">
+                      <a href="product.html?cate_no=1">LOOKBOOK</a>
+                  </li>
+                  <li class="nav_li">
+                      <a href="product.html?cate_no=2">BRAND</a>
+                  </li>
+              </ul>
+              <div class="pan">
+                  <ul class="pan_ul">
+                      <li class="pan_li">
+                              <p class="nav_title">BEST</p>
+                          <a href="product.html?cate_no=0">
+                              <div class="nav_item">
+                                  <p>생활가전 베스트</p>
+                                  <p>프리미엄 가전 베스트</p>
+                                  <p>1인가전 모음전</p>
+                                  <p>득템찬스</p>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="pan_li">
+                          <p class="nav_title">NEW</p>
+                          <a href="product.html?cate_no=1">
+                              <div class="nav_item">
+                                  <p>신규 브랜드 모음전</p>
+                                  <p>지금 뜨는 이슈 제품</p>
+                                  <p>난방 가전 HOT 아이템</p>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="pan_li">
+                          <p class="nav_title">WOMEN</p>
+                          <a href="product.html?cate_no=2">
+                              <div class="nav_item">
+                                  <p>자켓</p>
+                                  <p>코트</p>
+                                  <p>점퍼</p>
+                                  <p>가죽/모피/무스탕</p>
+                                  <p>니트/베스트</p>
+                                  <p>가디건</p>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="pan_li">
+                          <p class="nav_title">MEN</p>
+                          <a href="product.html?cate_no=3">
+                              <div class="nav_item">
+                                  <p>정장/수트</p>
+                                  <p>코트</p>
+                                  <p>재킷</p>
+                                  <p>점퍼</p>
+                                  <p>니트/베스트</p>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="pan_li">
+                          <p class="nav_title">LIFE</p>
+                          <a href="product.html?cate_no=4">
+                              <div class="nav_item">
+                                  <p>건강식품</p>
+                                  <p>신선식품</p>
+                                  <p>가공육/통조림</p>
+                                  <p>간편식</p>
+                                  <p>베이커리/간식</p>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="pan_li">
+                          <p class="nav_title">ACC</p>
+                          <a href="product.html?cate_no=5">
+                              <div class="nav_item">
+                                  <p>카메라/스피커</p>
+                                  <p>컴퓨터/모바일/키덜트</p>
+                                  <p>생활/계절가전</p>
+                                  <p>주방가전</p>
+                                  <p>건강/미용가전</p>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="pan_li">
+                          <p class="nav_title">KITCHEN</p>
+                          <a href="product.html?cate_no=6">
+                              <div class="nav_item">
+                                  <p>테이블웨어</p>
+                                  <p>키친웨어</p>
+                                  <p>침구</p>
+                                  <p>침대</p>
+                                  <p>가구</p>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="pan_li">
+                          <p class="nav_title">SALE</p>
+                          <a href="product.html?cate_no=7">
+                              <div class="nav_item">
+                                  <p>핫딜 모음전</p>
+                                  <p>인기 세일상품</p>
+                                  <p>하나더 1+1</p>
+                                  <p>득템찬스 기획전</p>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="pan_li">
+                          <p class="nav_title">SEASON OFF</p>
+                          <a href="product.html?cate_no=8">
+                              <div class="nav_item">
+                                  <p>해외명품</p>
+                                  <p>명품화장품</p>
+                                  <p>화장품</p>
+                                  <p>패션잡화</p>
+                                  <p>기타</p>
+                              </div>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="main">
+            <div class="login">
+                <h2>로그인</h2>
+                <input type="text" placeholder="아이디를 입력하세요" id="_id" value="flat123">
+                <input type="password" placeholder="비밀번호를 입력하세요" id="_pw" value="flat123!">
+                <input type="button" value="로그인" id="login_btn">
+            </div>
+            <div class="join_offer">
+                <p>아직 회원이 아니신가요?</p>
+                <p>회원가입을 하시면 다양하고 특별한 혜택이 준비되어 있습니다</p>
+                <div class="join_offer_btn">
+                    <a href="./join.html">
+                    회원가입
+                    </a>
+                </div>
+            </div>
+       </div>
+       <div class="footer">
+        <div class="footer_top">
+            <ul class="ft_top_ul">
+                <li class="ft_top_li">회사소개</li>
+                <li class="ft_top_li">이용약관</li>
+                <li class="ft_top_li">개인정보 처리방침</li>
+                <li class="ft_top_li">쇼핑몰 이용안내</li>
+                <li class="ft_top_li">고객센터 바로가기</li>
+            </ul>
+            <div class="sns_icon">
+                <div class="insta">
+                    <img src="./img_ft/icon_logo/ft_sns01.gif" alt="sns연결아이콘">
+                </div>
+                <div class="facebook">
+                    <img src="./img_ft/icon_logo/ft_sns02.gif" alt="sns연결아이콘">
+                </div>
+                <div class="twitter">
+                    <img src="./img_ft/icon_logo/ft_sns03.gif" alt="sns연결아이콘">
+                </div>
+            </div>
+        </div>
+        <div class="footer_bot">
+            <div class="ft_bot ft_cs">
+                <div class="ft_bot_text">CUSTOMER CENTER</div>
+                <div class="ft_bot_line"></div>
+                <div class="ft_cs1">0000 - 0000</div>
+                <div class="ft_cs2">
+                    통화량이 많을 때는 Q&A를 이용해주세요
+                    <br>
+                    평일 오전 09:30 ~ 오후 6:00 / 점심시간 오후 12:00 ~ 오후 1:30
+                    <br>
+                    토 / 일 / 공휴일 휴무
+                </div>
+            </div>
+            <div class="ft_bot ft_bank">
+                <div class="ft_bot_text">BANK ACCOUNT</div>
+                <div class="ft_bot_line"></div>
+                <div class="ft_bank_num">
+                    국민 00000-000-00000
+                    <br>
+                    신한 00000-000-00000
+                    <br>
+                    예금주 : 조아정
+                </div>
+            </div>
+            <div class="ft_bot ft_shop">
+                <div class="ft_bot_text">SHOPPING MENU</div>
+                <div class="ft_bot_line"></div>
+                <div class="ft_shop_info">
+                    마이페이지
+                    <br>
+                    관심상품
+                    <br>
+                    장바구니
+                    <br>
+                    주문조회
+                </div>
+            </div>
+            <div class="ft_bot ft_return">
+                <div class="ft_bot_text">RETURN / EXCHANGE</div>
+                <div class="ft_bot_line"></div>
+                <div class="ft_return_info">
+                    반품주소 : 서울특별시 동대문구 답십리동 00000-00
+                    <br>
+                    교환 및 반품시, 미리 고객센터에 접수 후 보내주세요
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            function login(){
+                let _id = $('#_id').val();
+                let _pw = $('#_pw').val();
+
+                $.ajax({
+                    url: './php/login.php',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {id:_id, pw:_pw},
+
+                    success: function(data){
+                        // console.log(data.sql)
+                        if(data.r_count == 1){
+                            // alert("환영합니다. " + data.name + "님")
+                            location.href = "index.html";
+                        }
+
+                        else{
+                            alert('일치하는 정보가 없습니다.')
+                        }
+                    },
+                    error: function(request, error){
+                        alert('접속실패')
+                    }
+                }) 
+            }
+
+            $('#login_btn').click(function(){
+                login();
+            })
+        })
+    </script>
+</body>
+</html>

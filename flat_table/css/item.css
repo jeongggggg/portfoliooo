@@ -1,0 +1,369 @@
+body{margin: 0;}
+
+.main{
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-top: 110px !important;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.item_img{
+    float: left;
+    width: 650px;
+    position: relative;
+    overflow: hidden;
+}
+
+.item_img > img{
+    width: 100%;
+}
+
+.magnifier{
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #fff, 0 0 3px 3px rgba(0,0,0,0.8); 
+
+    background-repeat: no-repeat;
+    /* border: 3px solid red; */
+
+    transform: scale(1.5);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: none;   
+}
+
+.item_desc{
+    width: 510px;
+    float: right;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+.tltle{
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    border-top: 2px solid #777;
+    padding-top: 20px;
+
+}
+
+.item_desc_info{
+    position: relative;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.item_table{
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.table_line{
+    border-bottom: solid #ececec;
+}
+
+td{
+    width: 13px;
+    padding: 10px 0px;
+}
+
+#cash{
+    width: 100%;
+    height: 30px;
+}
+
+.item_desc_color,
+.item_opt_size{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 10px;
+    padding-left: 3px;
+}
+
+.item_desc_color_L,
+.item_opt_size_L{
+    float: left;
+    width: 124px;
+}
+
+.item_desc_color_R:nth-child(4),
+.item_opt_size_L:nth-child(4){
+    clear: both;
+}
+
+.color:not(.color_opt),
+.size {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #d7d7d7;
+    float: left;
+    margin: 0 2px;
+    background: #fff;
+    padding: 3px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* /////////////////////////// */
+.size_disabled { 
+    cursor: pointer;
+    color: #d7d7d7;
+    pointer-events: none;
+    background: #d7d7d7;
+}
+.size_opt {
+    color: #d7d7d7;
+}
+.opt_selected {
+    border: 1px solid #000 !important;
+}
+/* /////////////////////////// */
+
+.color_opt,
+.size_opt{
+    clear: both;
+    margin-left: 125px;
+}
+
+.red{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: red;
+}
+
+.white{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #fff;
+}
+
+.gray{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #a9a9a9;
+}
+
+.black{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #000;
+}
+
+.red, .white, .gray, .black{
+    text-indent: -999999px;
+}
+
+.min_buy{
+    clear: both;
+    border-bottom: 1px solid;
+    padding: 10px 0 ;
+}
+
+.total_box{
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid;
+}
+
+.total{
+    margin: 10px 0 0;
+    color: #353535;
+    vertical-align: middle;
+    background: #fff;
+    padding-left: 4px;
+    
+}
+
+.number{
+    font-size: 21px;
+    margin: 0 10px;
+}
+
+.buy{
+    width: 508px;
+    height: 58px;
+    line-height: 58px;
+    border: 1px solid #222;
+    letter-spacing: 1px;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+.to_cart,
+.wish_list{
+    width: 251px;
+    height: 58px;
+    line-height: 58px;
+    letter-spacing: 0.5px;
+    color: #222;
+    border: 1px solid #e5e5e5;
+    font-size: 14px;
+    font-family: 'Poppins',sans-serif;
+    display: block;
+    float: left;
+    transition: all 0.3s;
+    text-align: center;
+    cursor: pointer;
+}
+
+.to_cart:hover,
+.wish_list:hover{
+    background: #f9f9f9;
+}
+
+.wish_list{
+    float: right;
+}
+
+/* 하단 탭 + 제품 상세 설명 */
+
+.item_information{
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.m_bot_btn{
+    overflow: hidden;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.m_bot_btn > div{
+    float: left;
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+    height: 53px;
+    line-height: 53px;
+    position: relative;
+    font-size: 13px;
+    color: #888;
+    cursor: pointer;
+
+}
+
+.b_click{
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.show_info{
+    width: 100%;
+    text-align: center;
+}
+
+.show_in{
+    width: 100%;
+    display: none;
+    height: 1000px;
+}
+
+.show_in > img{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 400px;
+    margin-bottom: 20px;
+}
+
+.show_in > p{
+    font-size: 13px;
+    font-weight: 800;
+}
+
+
+.info1{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.show_info1{
+    display: block;
+}
+
+.show_info > img{
+    width: 100%;
+}
+
+/* 수량 옵션 */
+
+.opt_box {
+    width: 100%;
+    /* table에만 가능함. 겹치는 보더를 합침(padding도 합쳐버림) */
+    border-collapse: collapse;
+    /* margin: 15px 0; */
+
+}
+.opt_box td {
+    padding: 10px 0;
+
+    /* 안쪽 글씨들 세로간격 벌림 */
+    line-height: 22px;
+}
+.opt_name {
+    width: 25px;
+}
+
+.btn_qty, .txt_qty {
+    -moz-appearance:none;  
+    -webkit-appearance:none;  
+    appearance:none;   
+}
+.btn_qty,
+.txt_qty {
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    color: #848484;
+    border: 1px solid;
+    float: left;
+    box-sizing: border-box;
+} 
+.btn_qty_minus {
+    border-right: none;
+}
+.btn_qty_plus {
+    border-left: none;
+}
+.txt_qty {
+    font-size: 12px;
+    text-align: right;
+}
+.opt_close {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.opt_price {
+    text-align: right;
+}
+
+.total_price {
+    text-align: right;
+    margin: 30px 0;
+    color: #757575;
+}
+.total_price > .final_price {
+    font-size: 28px;
+    font-weight: 600;
+}
