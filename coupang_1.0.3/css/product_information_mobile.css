@@ -1,0 +1,193 @@
+/* 메인 */
+.main{
+    overflow: hidden;
+}
+
+.item_img{
+    width: 100%;
+    height: 450px;
+}
+
+.item_img > img{
+    width: 100%;
+}
+
+.item_title{
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 900;
+
+}
+
+.item_price{
+    font-size: 19px;
+    font-weight: 900;
+    color: darkred;
+    margin-bottom: 10px;
+
+}
+
+.item_del{
+    font-size: 17px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.item_option > select{
+    width: 100%;
+    height: 50px;
+    background: #fafafa;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.info_last{
+    width: 100%;
+    height: 60px;
+    margin-top: 8px;
+}
+
+.quantity{
+    width: 83px;
+    height: 60px;
+    float: left;
+    margin-right: 12px;
+}
+
+#item_q{
+    width: 70%;
+    height: 100%;
+    outline: none;
+    background: #f1f1f1;;
+    float: left;
+    box-sizing: border-box;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+#up_bt,
+#down_bt{
+    width: 30%;
+    height: 30px;
+    color: #777;
+    background: #f1f1f1;
+    border: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.in_cart{
+    float: left;
+    width: 180px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 900;
+    font-size: 18px;
+    border: 2px solid #4285f4;
+    color: #4285f4;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-right: 10px;
+    background: #fff;
+}
+
+.go_pay{
+    width: 185px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 900;
+    font-size: 18px;
+    color: #fff;
+    margin-right: 10px;
+    background: #4285f4;
+    float: left;
+    cursor: pointer;
+}
+
+/* 하단 탭 */
+
+/* 메인하단 */
+
+.main_bottom{
+    overflow: hidden ;
+    position: relative;
+}
+
+.m_bot_btn{
+    overflow: hidden;
+}
+
+.m_bot_btn > div{
+    float: left;
+    width: calc(100% / 4);
+    border-right: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 12px;
+    box-sizing: border-box;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+.line_L{
+    border-left: 1px solid;
+}
+
+.b_click{
+    background: #4285f4;
+    color: #fff;
+    border: 1px solid;
+}
+
+.show_info{
+    width: 100%;
+    height: 1400px;
+}
+
+.show_in{
+    width: 100%;
+    display: none;
+}
+
+.show_info1{
+    display: block;
+}
+
+.show_in > img{
+    width: 100%;
+}
+
+.info1{
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media screen and (max-width : 320px){
+    .go_pay{
+        width: 100px;
+        height: 60px;
+        font-size: 14px;
+    }
+
+    .in_cart{
+        width: 100px;
+        font-size: 14px;
+    }
+
+    .item_img{
+        width: 100%;
+        height: 290px;
+    }
+
+    .m_bot_btn > div{
+        font-size: 11px;
+    }
+}
+

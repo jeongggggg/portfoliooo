@@ -1,0 +1,409 @@
+/* 폰트 */
+@font-face {
+    font-family: 'notosans';
+
+    src: local('fonts/notosans'), 
+        url(./fonts/NotoSansMonoCJKkr-Regular.ttf) format('truetype'),
+        url(fonts/NotoSansMonoCJKkr-Regular.woff) format('woff');
+
+    font-style: normal;
+    font-weight: normal;
+} 
+
+body{
+    margin: 0;
+    font-family: 'notosans',sans-serif , serif;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.w_1020{
+    width: 1020px;
+    /* overflow: hidden; */
+    margin: 0 auto;
+    position: relative;
+
+}
+
+p{
+    margin: 0;
+}
+
+/* 헤더 */
+
+.header{
+    width: 100%;
+    height: 197px;
+    background: #fff;
+    border-bottom: 2px solid #ddd;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+/* 헤더 탑 */
+
+.header_top{
+    width: 100%;
+    height: 30px;
+    background: #f0f0f0;
+}
+
+.header_t_lift{
+    float: left;
+}
+
+.left,
+.right{
+    float: left;
+    margin-right: 20px;
+    line-height: 30px;
+    cursor: pointer;
+
+}
+
+.header_t_right{
+    float: right;
+}
+
+.m_r_0{
+    margin-right: 0;
+}
+
+/* 헤더 바텀 */
+
+.header_bot{
+    padding-top: 10px;
+}
+
+/* 로고 */
+
+.logo{
+    width: 200px;
+    height: 46px;
+    margin: 0 auto;
+    background: url(../img_cp/logo/logo_coupang_w350.png) no-repeat center / contain;
+}
+
+.logo > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+}
+
+/* 서치바 */
+
+.search_bar{
+    width: 400px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 3px solid #4285f4
+}
+
+.s_class{
+    width: 90px;
+    height: 100%;
+    line-height: 35px;
+    float: left;
+    position: relative;
+
+}
+
+.s_class > p:nth-child(1){
+    float: left;
+    margin-left: 7px;
+}
+
+.s_class > p:nth-child(2){
+    float: right;
+    margin-right: 7px;
+    
+}
+
+.s_class_line{
+    width: 1px;
+    height: 25px;
+    background: #777;
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+
+.search_txt{
+    width: 260px;
+    height: 100%;
+    float: left;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 0 10px;
+    border: none;
+}
+
+.search_icon{
+    width: 50px;
+    height: 100%;
+    float: right;
+    background: url(../img_cp/logo/search.jpg) no-repeat center;
+    background-size: 85px;
+    background-position-x: -10px;
+    background-position-y: -11px;
+}
+
+/* 서치바 옆 서브 아이콘 */
+
+.sub_icon{
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    right: 160px;
+    bottom: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.my_coupang,
+.cart{
+    width: 50%;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+
+}
+
+.my_coupang_icon{
+    width: 100%;
+    height: 40px;
+    background: url(../img_cp/logo/my_coupang.jpg) no-repeat center;
+    background-size: 70px;
+}
+.cart_icon{
+    width: 100%;
+    height: 40px;
+    background: url(../img_cp/logo/cart.jpg) no-repeat center;
+    background-size: 70px;
+}
+
+
+/* GNB */
+
+.gnb{
+    width: 100%;
+    height: 45px;
+    position: relative;
+}
+
+/* 카테고리 */
+
+.category{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #4285f4;
+    position: absolute;
+    left: 27px;
+    top: -50px;
+}
+
+.category > p{
+    font-size: 13px;
+    position: absolute;
+    left: 19px;
+    bottom: 14px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.hamburger{
+    width: 40px;
+    margin: 25px auto;
+    
+}
+
+.hamburger_line{
+    width: 100%;
+    height: 5px;
+    background: #fff;
+}
+
+.h_m{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+
+.category:hover{
+    cursor: pointer;
+}
+
+.category_click{
+    width: 200px;
+    height: 540px;
+    background: #ecebeb;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    opacity: 0.8;
+
+    position: absolute;
+    left: 0;
+    top: 40px;
+
+    display: none;
+}
+
+.c_sec{
+    margin-top: 10px;
+    /* margin-bottom: 5px; */
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.c_sec > p{
+    font-weight: 900;
+}
+
+.c_sec > p:hover{
+    font-weight: 900;
+    text-decoration: underline;
+    color: #4285f4;
+}
+
+
+
+/* 메뉴 */
+
+.mune_ul{
+    width: 78%;
+    height: 45px;
+    margin: 0 auto;
+}
+
+.manu_li{
+    width: calc((100% - (10px * 7))/ 8);
+    height: 100%;
+    line-height: 45px;
+    float: left;
+    text-align: center;
+    padding-right: 10px;
+    font-weight: 900;
+}
+
+.manu_li > a:hover{
+    color: #4285f4;
+}
+
+.p_r_0{
+    padding-right: 0;
+}
+
+
+
+
+/* 푸터 */
+
+.footer{
+    width: 100%;
+    height: 160px;
+    border-top: 2px solid #ddd;
+    margin-top: 80px;
+}
+
+.f_w{
+    width: 1020px;
+    height: 100%;
+    padding: 40px 80px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.cou_name{
+    width: 230px;
+    height: 80px;
+    float: left;
+    background: url(../img_cp/logo/footer_logo.jpg) no-repeat center / contain;
+}
+
+.cou_name > a > h2{
+    font-size: 35px;
+    float: left;
+    margin: 0 20px;
+}
+
+.info{
+    width: 232px;
+    float: left;
+    font-weight: 900;
+}
+
+.info > p{
+    display: inline-block;
+}
+
+.service{
+    width: 190px;
+    float: left;
+}
+
+.service p:nth-child(1){
+    margin-left: 40px;
+}
+
+.service p:nth-child(2){
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.footer_link{
+    width: 200px;
+    height: 100px;
+    float: right;
+}
+
+.link{
+    width: calc(100% / 3);
+    height: 100%;
+    float: left;
+}
+
+.facebook{
+    background: url(../img_cp/logo/facebook.jpg) no-repeat center / cover;
+}
+
+.insta{
+    background: url(../img_cp/logo/insta.jpg) no-repeat center / cover;
+}
+
+.blog{
+    background: url(../img_cp/logo/blog.jpg) no-repeat center / cover;
+}
+
+/* 탑버튼 */
+
+.btn_top {
+    width: 42px;
+    height: 42px;
+   
+    position: fixed;
+    right: 100px;
+    bottom: 50px;
+}
+
+.btn_top > img{
+    width: 100%;
+}

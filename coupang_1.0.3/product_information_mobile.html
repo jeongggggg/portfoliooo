@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/product_information_mobile.js"></script>
+    <script src="./js/common_mobile.js"></script>
+    <link rel="stylesheet" href="./css/common_mobile.css">
+    <link rel="stylesheet" href="./css/product_information_mobile.css">
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <div class="w_480">
+            <div class="header">
+                <div class="logo">
+                    <a href="./main_mobile.html">로고</a>
+                </div>
+                <div class="search_bar">
+                    <div class="s_class">
+                        <p>전체</p>
+                        <p> ▼</p>
+                        <div class="s_class_line"></div>
+                    </div>
+                    <input type="text" class="search_txt" placeholder="찾으시는 상품을 검색하세요">
+                    <a href="./product_mobile.html">
+                        <div class="search_icon"></div> 
+                    </a>
+                </div>
+            </div>
+            <div class="main">
+                <div class="item_img">
+                    <img src="./img_cp/item/item_4.png" alt="상품이미지">
+                </div>
+                <div class="item_title">
+                    <p>도그아이 강아지 장난감 봉제 수박 + 당근 + 바나나</p>
+                </div>
+                <div class="info_eve item_price">
+                    <p>7,700원</p>
+                </div>
+                <div class="info_eve item_del">
+                    <p>무료배송</p>
+                </div>
+                <div class="item_option">
+                    <select name="dog_toy">
+                        <option value="set">수박 + 당근 + 바나나</option>
+                        <option value="water_melon">수박</option>
+                        <option value="carrot">당근</option>
+                        <option value="banana">바나나</option>
+                    </select>
+                </div>
+                <div class="info_last">
+                    <div class="quantity">
+                        <input type="text" value="1" id="item_q">
+                        <div class="q_button">
+                            <input type="button" value="▲" id="up_bt" onclick="plus()">
+                            <input type="button" value="▼" id="down_bt" onclick="minus()">
+                        </div>
+                    </div>
+                    <div class="purchase">
+                        <div class="pur in_cart">
+                            <p>장바구니 담기</p>
+                        </div>
+                        <div class="pur go_pay">
+                            <p>바로 구매 ▶</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_bottom w_1240">
+                <div class="m_bot_btn">
+                    <div class="line_L label1 b_click">
+                        <p>상품상세</p>
+                    </div>
+                    <div class="label2">
+                        <p>상품평</p>
+                    </div>
+                    <div class="label3">
+                        <p>상품문의</p>
+                    </div>
+                    <div class="label4">
+                        <p>배송/교환/반품</p>
+                    </div>
+                </div>
+                <div class="show_info">
+                    <div class="show_in show1">
+                        <img src="./img_cp/item/item_info_img.jpg" alt="추천상품이미지">
+                    </div>
+                    <!-- <div class="show_in show2"></div>
+                    <div class="show_in show3"></div>
+                    <div class="show_in show4"></div> -->
+                </div>
+            </div>
+            <div class="footer w_480">
+                <div class="f_w">
+                    <div class="cou_name">
+                        <a href="#"></a>
+                    </div>
+                    <div class="info">
+                        <p>쿠팡(주)대표이사</p>
+                        <p>서울시 송파구 송파대로</p>
+                        <p>사업자 등록번호</p>
+                        <p>통신판매업신고</p>
+                    </div>
+                    <div class="service">
+                        <p>365 고객센터</p>
+                        <p>1577-0000</p>
+                    </div>
+                    <div class="footer_link">
+                        <div class="link facebook"></div>
+                        <div class="link insta"></div>
+                        <div class="link blog"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="#wrap" class="btn_top">
+                <img src="./img_cp/logo/top_icon.png" alt="탑버튼">
+            </a>
+        </div>
+    </div>
+    <script>
+         //// 수량 더하기 빼기 ////
+        function plus() {
+
+            let item_q = document.getElementById('item_q');
+            let tmp_qty = Number(item_q.value) + 1;
+
+            item_q.value = tmp_qty;
+
+            }
+
+            function minus() { 
+            let item_q = document.getElementById('item_q');
+            let tmp_qty = Number(item_q.value) - 1;
+
+            item_q.value = tmp_qty; 
+
+            if(tmp_qty <= 0){
+                alert("1개 이상의 수량을 선택해주세요")
+                item_q.value = 1
+            }
+        }
+    </script>
+</body>
+</html>

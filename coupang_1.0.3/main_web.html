@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/main_web.js"></script>
+    <script src="./js/common_web.js"></script>
+    <link rel="stylesheet" href="./css/common_web.css">
+    <link rel="stylesheet" href="./css/main_web.css">
+
+</head>
+
+<body>
+   
+    <div class="wrap" id="wrap">
+        <div class="pop_up">
+            <div class="pop_img">
+                <img src="./img_cp/popup/pop1.jpg" alt="팝업이미지" class="pop_s_img sec1_img">
+                <img src="./img_cp/popup/pop2.jpg" alt="팝업이미지" class="pop_s_img sec2_img">
+                <img src="./img_cp/popup/pop3.jpg" alt="팝업이미지" class="pop_s_img sec3_img">
+                <img src="./img_cp/popup/pop4.jpg" alt="팝업이미지" class="pop_s_img sec4_img">
+                <img src="./img_cp/popup/pop5.jpg" alt="팝업이미지" class="pop_s_img sec5_img">
+                <img src="./img_cp/popup/pop6.jpg" alt="팝업이미지" class="pop_s_img sec6_img">
+            </div>
+            <div class="pop_check">
+                <div class="btn_item pop_sec1">
+                    <p>쿠팡</p>
+                    <p> 정기배송</p>
+                </div>
+                <div class="btn_item pop_sec2">
+                     <p>쿠팡</p>
+                     <p> only</p>
+                </div>
+                <div class="btn_item pop_sec3 m_0">
+                     <p>골드박스</p>
+                </div>
+                <div class="btn_item pop_sec4">
+                     <p>이벤트/쿠폰</p>
+                </div>
+                <div class="btn_item pop_sec5">
+                     <p>카드</p>
+                     <p> 할인혜택</p>
+                </div>
+                <div class="btn_item pop_sec6 m_0">
+                     <p>기간한정</p>
+                     <p> SALE</p>
+                </div>
+            </div>
+            <div class="layer_close">
+                <div class="day_close" id="close_today">오늘 하루 열지 않기</div>
+                <div class="close" id="close">닫기</div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="header_top">
+                    <div class="w_1020">
+                    <div class="header_t_lift">
+                        <div class="left bookmark">즐겨찾기</div>
+                        <div class="left enter"> 입점신청 ▼</div>
+                    </div>
+                    <div class="header_t_right">
+                        <div class="right login">로그인</div>
+                        <div class="right new_member">회원가입</div>
+                        <div class="right m_r_0 service">고객센터</div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bot">
+                <div class="w_1020">
+                    <div class="logo">
+                        <a href="./main_web.html">로고</a>
+                    </div>
+                    <div class="search_bar">
+                        <div class="s_class">
+                            <p>전체</p>
+                            <p> ▼</p>
+                            <div class="s_class_line"></div>
+                        </div>
+                        <input type="text" class="search_txt" placeholder="찾으시는 상품을 검색하세요">
+                        <a href="./product_web.html">
+                            <div class="search_icon"></div>
+                        </a>
+                    </div>
+                    <div class="sub_icon">
+                        <div class="my_coupang">
+                            <div class="my_coupang_icon"></div>
+                            <p>마이쿠팡</p>
+                        </div>
+                        <div class="cart">
+                            <div class="cart_icon"></div>
+                            <p>장바구니</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gnb">
+                    <div class="w_1020">
+                        <ul class="mune_ul">
+                            <li class="manu_li">
+                                <a href="./product_web.html">
+                                로켓배송
+                                </a>
+                            </li>
+                            <li class="manu_li">
+                                <a href="./product_web.html">
+                                    로켓프레시
+                                </a>
+                            </li>
+                            <li class="manu_li">
+                                <a href="./product_web.html">
+                                    로켓직구
+                                </a>
+                            </li>
+                            <li class="manu_li">
+                                <a href="./product_web.html">
+                                    골드박스
+                                </a>
+                            </li> 
+                            <li class="manu_li">
+                                <a href="./product_web.html">
+                                    정기배송
+                                </a>
+                            </li> 
+                            <li class="manu_li">
+                                <a href="./product_web.html">
+                                    이벤트/쿠폰
+                                </a>
+                            </li> 
+                            <li class="manu_li">
+                                <a href="./product_web.html">
+                                    기획전
+                                </a>
+                            </li>
+                            <li class="p_r_0 manu_li">
+                                <a href="./product_web.html">
+                                    여행/티켓
+                                 </a>
+                            </li>
+                        </ul>
+                        <div class="category">
+                            <div class="hamburger">
+                                <div class="hamburger_line"></div>
+                                <div class="hamburger_line h_m"></div>
+                                <div class="hamburger_line"></div>
+                            </div>
+                            <p>카테고리</p>
+                        </div>
+                        <div class="category_click">
+                            <div class="c_sec">
+                                <p>패션의류/잡화</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>뷰티</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>출산/유아동</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>식품</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>주방용품</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>생활용품</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>홈인테리어</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>가전디지털</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>스포츠/레저</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>자동차용품</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>도서/음반/DVD</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>완구/취미</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>문구/오피스</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>반려동물용품</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>헬스/건강식품</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>여행/티켓</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>기획전</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main_banner">
+                <img src="./img_cp/main_banner/main_b1.jpg" alt="메인배너1" class="m_banner">
+                <img src="./img_cp/main_banner/main_b2.jpg" alt="메인배너2" class="m_banner">
+                <img src="./img_cp/main_banner/main_b3.jpg" alt="메인배너3" class="m_banner">
+                <img src="./img_cp/main_banner/main_b4.jpg" alt="메인배너4" class="m_banner">
+                <img src="./img_cp/main_banner/main_b5.jpg" alt="메인배너5" class="m_banner">
+
+                <div class="indi">
+                    <div class="circle c_active"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+
+                <input type="button" value="》" class="btn_slide" id="btn_slide_R">
+            </div>
+
+            <div class="today_find w_1020">
+                <div class="t_find_title">
+                    <h1>오늘의 발견</h1>
+                    <p>오늘 쿠팡이 엄선한 가장 HOT한 상품</p>
+                </div>
+                <div class="t_find_container">
+                    <div class="t_find_sec_top">
+                        <div class="t_find_item1">
+                            <img src="./img_cp/today_f/find1.jpg" alt="상품배너이미지">
+                        </div>
+                        <div class="m_r_0 t_find_item1">
+                            <img src="./img_cp/today_f/find2.jpg" alt="상품배너이미지">
+                        </div>
+                    </div>
+                    <div class="t_find_sec_bot">
+                        <div class="t_find_item2">
+                            <img src="./img_cp/today_f/find3.jpg" alt="상품배너이미지">
+                        </div>
+                        <div class="t_find_item2">
+                            <img src="./img_cp/today_f/find4.jpg" alt="상품배너이미지">
+                        </div>
+                        <div class="t_find_item2">
+                            <img src="./img_cp/today_f/find5.jpg" alt="상품배너이미지">
+                        </div>
+                        <div class="m_r_0 t_find_item2">
+                            <img src="./img_cp/today_f/find6.jpg" alt="상품배너이미지">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mid_banner">
+                <a href="./product_web.html">
+                    <img src="./img_cp/mid_banner/mid_b_w.jpg" alt="중간배너">
+                </a>
+            </div>
+
+            <div class="today_shopping w_1020">
+                <div class="t_s_title">
+                    <p>오늘의</p>
+                    <p>쇼핑제안</p>
+                </div>
+                <div class="t_s_container">
+                    <div class="t_s_sec">
+                        <div class="t_s_img img1">
+                            <a href="#"></a>
+                        </div>
+                        <p>편안한 홈웨어</p>
+                    </div>
+                    <div class="t_s_sec">
+                        <div class="t_s_img img2">
+                            <a href="#"></a>
+                        </div>
+                        <p>여성 캐주얼</p>
+                    </div>
+                    <div class="t_s_sec">
+                        <div class="t_s_img img3">
+                            <a href="#"></a>
+                        </div>
+                        <p>오늘의 특별 코디</p>
+                    </div>
+                    <div class=" m_r_0 t_s_sec">
+                        <div class="t_s_img img4">
+                            <a href="#"></a>
+                        </div>
+                        <p>캐시미어 목도리</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c_recommend w_1020">
+                <div class="c_re_title">
+                    <p>HOT! TREND</p>
+                    <p>카테고리별</p>
+                    <p>추천 광고상품</p>
+                </div>
+                <div class="c_re_container">
+                    <div class="c_re_sec1">
+                        <div class="c_t_img">
+                            <a href="#"></a>
+                        </div>
+                        <div class="c_img">
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                    <div class="c_re_sec2">
+                        <div class="c_re_item">
+                            <div class="c_re_img_t">
+                                <a href="#"></a>
+                            </div>
+                            <div class="c_re_img_b">
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <div class="m_r_0 c_re_item">
+                            <div class="c_re_sec3_img">
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="f_w">
+                <div class="cou_name">
+                    <a href="#"></a>
+                </div>
+                <div class="info">
+                    <p>쿠팡(주)대표이사</p>
+                    <p>서울시 송파구 송파대로</p>
+                    <p>사업자 등록번호</p>
+                    <p>통신판매업신고</p>
+                </div>
+                <div class="service">
+                    <p>365 고객센터</p>
+                    <p>1577-0000</p>
+                </div>
+                <div class="footer_link">
+                    <div class="link facebook"></div>
+                    <div class="link insta"></div>
+                    <div class="link blog"></div>
+                </div>
+            </div>
+        </div>
+        <a href="#wrap" class="btn_top">
+            <img src="./img_cp/logo/top_icon.png" alt="탑버튼">
+        </a>
+    </div>
+    <script>
+
+       
+    </script>
+</body>
+</html>

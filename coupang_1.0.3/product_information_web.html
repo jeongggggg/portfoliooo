@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/product_information_web.js"></script>
+    <script src="./js/common_web.js"></script>
+    <link rel="stylesheet" href="./css/common_web.css">
+    <link rel="stylesheet" href="./css/product_information_wed.css">
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <div class="header">
+            <div class="header_top">
+                    <div class="w_1020">
+                    <div class="header_t_lift">
+                        <div class="left bookmark">즐겨찾기</div>
+                        <div class="left enter"> 입점신청 ▼</div>
+                    </div>
+                    <div class="header_t_right">
+                        <div class="right login">로그인</div>
+                        <div class="right new_member">회원가입</div>
+                        <div class="right m_r_0 service">고객센터</div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bot">
+                <div class="w_1020">
+                    <div class="logo">
+                        <a href="./main_web.html">로고</a>
+                    </div>
+                    <div class="search_bar">
+                        <div class="s_class">
+                            <p>전체</p>
+                            <p> ▼</p>
+                            <div class="s_class_line"></div>
+                        </div>
+                        <input type="text" class="search_txt" placeholder="찾으시는 상품을 검색하세요">
+                        <a href="./product_web.html">
+                            <div class="search_icon"></div>
+                        </a>
+                    </div>
+                    <div class="sub_icon">
+                        <div class="my_coupang">
+                            <div class="my_coupang_icon"></div>
+                            <p>마이쿠팡</p>
+                        </div>
+                        <div class="cart">
+                            <div class="cart_icon"></div>
+                            <p>장바구니</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gnb">
+                    <div class="w_1020">
+                        <ul class="mune_ul">
+                            <li class="manu_li">
+                                <a href="./product_web.html">
+                                로켓배송
+                                </a>
+                            </li>
+                            <li class="manu_li">
+                                <a href="./product_web.html">
+                                    로켓프레시
+                                </a>
+                            </li>
+                            <li class="manu_li">
+                                <a href="./product_web.html">
+                                    로켓직구
+                                </a>
+                            </li>
+                            <li class="manu_li">
+                                <a href="./product_web.html">
+                                    골드박스
+                                </a>
+                            </li> 
+                            <li class="manu_li">
+                                <a href="./product_web.html">
+                                    정기배송
+                                </a>
+                            </li> 
+                            <li class="manu_li">
+                                <a href="./product_web.html">
+                                    이벤트/쿠폰
+                                </a>
+                            </li> 
+                            <li class="manu_li">
+                                <a href="./product_web.html">
+                                    기획전
+                                </a>
+                            </li>
+                            <li class="p_r_0 manu_li">
+                                <a href="./product_web.html">
+                                    여행/티켓
+                                 </a>
+                            </li>
+                        </ul>
+                        <div class="category">
+                            <div class="hamburger">
+                                <div class="hamburger_line"></div>
+                                <div class="hamburger_line h_m"></div>
+                                <div class="hamburger_line"></div>
+                            </div>
+                            <p>카테고리</p>
+                        </div>
+                        <div class="category_click">
+                            <div class="c_sec">
+                                <p>패션의류/잡화</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>뷰티</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>출산/유아동</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>식품</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>주방용품</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>생활용품</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>홈인테리어</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>가전디지털</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>스포츠/레저</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>자동차용품</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>도서/음반/DVD</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>완구/취미</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>문구/오피스</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>반려동물용품</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>헬스/건강식품</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>여행/티켓</p>
+                            </div>
+                            <div class="c_sec">
+                                <p>기획전</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="w_1020">
+                <div class="main_top">
+                    <div class="product_img">
+                        <div class="mini_img">
+                            <div class="m_img mini_img1"></div>
+                            <div class="m_img mini_img2"></div>
+                            <div class="m_img mini_img3"></div>
+                            <div class="m_img mini_img4"></div>
+                        </div>
+                        <div class="big_img">
+                            <div class="big_ b_img1">
+                                <img src="./img_cp/item/item_4_1.jpg" alt="상품이미지">
+                            </div>
+                            <div class="big_ b_img2">
+                                <img src="./img_cp/item/item_4_2.jpg" alt="상품이미지">
+                            </div>
+                            <div class="big_ b_img3">
+                                <img src="./img_cp/item/item_4_3.jpg" alt="상품이미지">
+                            </div>
+                              <div class="big_ b_img4">
+                                <img src="./img_cp/item/item_4.png" alt="상품이미지">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_info">
+                        <div class="info_eve item_title">
+                            <p>도그아이 강아지 장난감 봉제 수박 + 당근 + 바나나</p>
+                        </div>
+                        <div class="info_eve item_price">
+                            <p>7,700원</p>
+                        </div>
+                        <div class="info_eve item_del">
+                            <p>무료배송</p>
+                        </div>
+                        <div class="item_option">
+                            <select name="dog_toy">
+                                <option value="set">수박 + 당근 + 바나나</option>
+                                <option value="water_melon">수박</option>
+                                <option value="carrot">당근</option>
+                                <option value="banana">바나나</option>
+                            </select>
+                        </div>
+                        <div class="info_last">
+                            <div class="quantity">
+                                <input type="text" value="1" id="item_q">
+                                <div class="q_button">
+                                    <input type="button" value="▲" id="up_bt" onclick= "plus()">
+                                    <input type="button" value="▼" id="down_bt" onclick= "minus()">
+                                </div>
+                            </div>
+                            <div class="purchase">
+                                <div class="pur in_cart">
+                                    <p>장바구니 담기</p>
+                                </div>
+                                <div class="pur go_pay">
+                                    <p>바로 구매 ▶</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_mid">
+                    <div class="main_mid_title">
+                        <p>다른 고객이 함께 구매한 상품</p>
+                    </div>
+                    <div class="mid_container">
+                        <div class="mid_sec">
+                            <div class="mid_img">
+                                <img src="./img_cp/item/mid_item_1.jpg" alt="상품썸네일">
+                            </div>
+                            <div class="mid_title">
+                                <p>티티펫 라텍스 스위트볼 강아지 장난감, 랜덤발송</p>
+                            </div>
+                            <div class="mid_price">
+                                <p>8,630원</p>
+                            </div>
+                        </div>
+                        <div class="mid_sec">
+                            <div class="mid_img">
+                                <img src="./img_cp/item/mid_item_2.jpg" alt="상품썸네일">
+                            </div>
+                            <div class="mid_title">
+                                <p>딩동펫 반려견 장난감 인형 당근 8 X 16cm + 바나나 + 가지</p>
+                            </div>
+                            <div class="mid_price">
+                                <p>8,780원</p>
+                            </div>
+                        </div>
+                        <div class="mid_sec">
+                            <div class="mid_img">
+                                <img src="./img_cp/item/mid_item_3.jpg" alt="상품썸네일">
+                            </div>
+                            <div class="mid_title">
+                                <p>딩동펫 반려동물 튀김 장난감 4종 세트, 혼합 색상</p>
+                            </div>
+                            <div class="mid_price">
+                                <p>9,900원</p>
+                            </div>
+                        </div>
+                        <div class="mid_sec m_r_0">
+                            <div class="mid_img">
+                                <img src="./img_cp/item/mid_item_4.jpg" alt="상품썸네일">
+                            </div>
+                            <div class="mid_title">
+                                <p>딩동펫 반려동물 야채 장난감 4종 세트, 혼합색상</p>
+                            </div>
+                            <div class="mid_price">
+                                <p>9,900원</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_bottom">
+                    <div class="m_bot_btn">
+                        <div class="line_L label1 b_click">
+                            <p>상품상세</p>
+                        </div>
+                        <div class="label2">
+                            <p>상품평</p>
+                        </div>
+                        <div class="label3">
+                            <p>상품문의</p>
+                        </div>
+                        <div class="label4">
+                            <p>배송/교환/반품 안내</p>
+                        </div>
+                    </div>
+                    <div class="show_info">
+                        <div class="show_in show1">
+                            <img src="./img_cp/item/item_info_img.jpg" alt="추천상품이미지">
+                        </div>
+                        <div class="show_in show2"></div>
+                        <div class="show_in show3"></div>
+                        <div class="show_in show4"></div>
+                    </div>
+                    <div class="side">
+                        <div class="price_com">
+                            <div class="price_com_title">
+                                <p>가격비교</p>
+                            </div>
+                            <div class="price_com_sec"></div>
+                        </div>
+                        <div class="side_cart">
+                            <div class="side_cart_title">
+                                <p>장바구니</p>
+                            </div>
+                            <div class="side_cart_sec"></div>
+                        </div>
+                        <div class="side_cart_sum">
+                            <p class="sum">합계</p>
+                            <input type="text" class="cart_cum">
+                            <p class="won">원</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="f_w">
+                <div class="cou_name">
+                    <a href="#"></a>
+                </div>
+                <div class="info">
+                    <p>쿠팡(주)대표이사</p>
+                    <p>서울시 송파구 송파대로</p>
+                    <p>사업자 등록번호</p>
+                    <p>통신판매업신고</p>
+                </div>
+                <div class="service">
+                    <p>365 고객센터</p>
+                    <p>1577-0000</p>
+                </div>
+                <div class="footer_link">
+                    <div class="link facebook"></div>
+                    <div class="link insta"></div>
+                    <div class="link blog"></div>
+                </div>
+            </div>
+        </div>
+        <a href="#wrap" class="btn_top">
+            <img src="./img_cp/logo/top_icon.png" alt="탑버튼">
+        </a>
+    </div>
+    <script>
+        //// 수량 더하기 빼기 ////
+       function plus() {
+
+        let item_q = document.getElementById('item_q');
+        let tmp_qty = Number(item_q.value) + 1;
+
+        item_q.value = tmp_qty;
+
+        }
+
+        function minus() { 
+        let item_q = document.getElementById('item_q');
+        let tmp_qty = Number(item_q.value) - 1;
+
+        item_q.value = tmp_qty; 
+
+        if(tmp_qty <= 0){
+            alert("1개 이상의 수량을 선택해주세요")
+            item_q.value = 1
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+/* 메인 */
+
+.main{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 2px;
+}
+
+/* 상품 모여있는 곳 */
+
+.item_container{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+
+    position: relative;
+}
+
+.item_sec1,
+.item_sec2,
+.item_sec3{
+    overflow: hidden;
+}
+
+.item{
+    width: calc((75% - (30px))/ 2);
+    height: 320px;
+    margin-right: 10px;
+    float: left;
+}
+
+.item_img > img{
+    width: 100%;
+}
+
+.quick_icon{
+    float: left;
+    width: 50px;
+    height: 20px;
+    margin: -4px 10px;
+}
+
+.pay_icon{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.pay_icon > a > img{
+    width: 100%;
+}
+
+.mini_cart_icon{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.mini_cart_icon > a > img{
+    width: 100%;
+}
+
+.item_title{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 15px;
+    text-overflow: ellipsis;
+}
+
+.item_title > p{
+    font-weight: 900;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.price{
+    height: 30px;
+    font-weight: 900;
+    font-size: 13px;
+    color: darkred;
+    float: left;
+}
+
+.item > a:hover .item_title{
+    text-decoration: underline;
+    color: #51a4d9;
+}
+
+.m_r_0{
+    margin-right: 0;
+}
+
+/* 사이드 가격비교, 장바구니 */
+
+.side{
+    width: 80px;
+    height: 30%;
+    position: absolute;
+    left: 79%;
+    top: 260px;
+}
+
+.price_com{
+    width: 100%;
+    height: 45%;
+    background: #e1ecf5;
+}
+
+.price_com_title,
+.side_cart_title{
+    background: #05355a;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.price_com_title > p,
+.side_cart_title > p{
+    color: #fff;
+    font-weight: 900;
+    font-size: 13px;
+}
+
+.side_cart{
+    width: 100%;
+    height: 45%;
+    background: #75bdf4;
+}
+
+.side_cart_sum{
+    width: 100%;
+    height: 5%;
+    background: #ddd;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.sum{
+    font-size: 13px;
+    float: left;
+}
+
+.won{
+    font-size: 13px;
+    float: right;
+}
+
+.cart_cum{
+    width: 30px;
+    height: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    background: #ddd;
+    color: darkred;
+    font-weight: 900;
+    font-size: 13px;
+    display: block;
+    float: left;
+}
+
+@media screen and (max-width : 320px) {
+
+    .item_title{
+        height: 80px;
+    }
+
+    
+    .item{
+        height: 270px;
+    }
+
+    .quick_icon{
+        margin: -4px 0;
+    }
+
+    .side{
+        left: 74%;
+    }
+
+    .item_title > p{
+        font-size: 11px;
+    }
+
+    .price{
+        font-size: 12px;
+    }
+
+    .sum{
+        font-size: 11px;
+    }
+    
+    .won{
+        font-size: 11px;
+    }
+    
+    
+
+}
+

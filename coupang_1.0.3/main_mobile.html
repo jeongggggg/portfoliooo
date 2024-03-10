@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/main_mobile.js"></script>
+    <script src="./js/common_mobile.js"></script>
+    <link rel="stylesheet" href="./css/common_mobile.css">
+    <link rel="stylesheet" href="./css/main_mobile.css">
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <div class="w_480">
+            <div class="pop_up">
+                <div class="pop_img">
+                    <img src="./img_cp/popup/GIF배너.gif" alt="팝업이미지" class="pop_s_img">
+                </div>
+                <div class="layer_close">
+                    <div class="day_close" id="close_today">오늘 하루 열지 않기</div>
+                    <div class="close" id="close">닫기</div>
+                </div>
+            </div>
+            <div class="header">
+                <div class="logo">
+                    <a href="./main_mobile.html">로고</a>
+                </div>
+                <div class="search_bar">
+                    <div class="s_class">
+                        <p>전체</p>
+                        <p> ▼</p>
+                        <div class="s_class_line"></div>
+                    </div>
+                    <input type="text" class="search_txt" placeholder="찾으시는 상품을 검색하세요">
+                    <a href="./product_mobile.html">
+                        <div class="search_icon"></div> 
+                    </a>
+                </div>
+                <div class="main_banner">
+                    <img src="./img_cp/main_banner/main_b1.jpg" alt="메인배너1" class="m_banner">
+                    <img src="./img_cp/main_banner/main_b2.jpg" alt="메인배너2" class="m_banner">
+                    <img src="./img_cp/main_banner/main_b3.jpg" alt="메인배너3" class="m_banner">
+                    <img src="./img_cp/main_banner/main_b4.jpg" alt="메인배너4" class="m_banner">
+                    <img src="./img_cp/main_banner/main_b5.jpg" alt="메인배너5" class="m_banner">
+    
+                    <div class="indi">
+                        <div class="circle c_active"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+    
+                    <input type="button" value="》" class="btn_slide" id="btn_slide_R">
+                </div>
+               <div class="gnb">
+                   <ul class="gnb_ul">
+                       <li class="gnb_li border_right border_bot">
+                           <a href="./product_mobile.html">
+                               로켓배송
+                           </a>
+                       </li>
+                       <li class="gnb_li border_right border_bot">
+                           <a href="./product_mobile.html">
+                               로켓직구
+                           </a>
+                       </li>
+                       <li class="gnb_li border_right border_bot">
+                           <a href="./product_mobile.html">
+                               정기배송
+                           </a>
+                       </li>
+                       <li class="gnb_li border_right border_bot">
+                           <a href="./product_mobile.html">
+                               기획전
+                           </a>
+                       </li>
+                       <li class="gnb_li border_bot">
+                           <a href="./product_mobile.html">
+                               쿠팡 only
+                           </a>
+                       </li>
+                       <li class="gnb_li border_right">
+                           <a href="./product_mobile.html">
+                               로켓프레시
+                           </a>
+                       </li>
+                       <li class="gnb_li border_right">
+                           <a href="./product_mobile.html">
+                               골드박스
+                           </a>
+                       </li>
+                       <li class="gnb_li border_right">
+                           <a href="./product_mobile.html">
+                               이벤트/쿠폰
+                           </a>
+                       </li>
+                       <li class="gnb_li border_right">
+                           <a href="./product_mobile.html">
+                               여행/티켓
+                           </a>
+                       </li>
+                       <li class="gnb_li">
+                           <a href="./product_mobile.html">
+                               쿠팡이츠
+                           </a>
+                       </li>
+                   </ul>
+               </div>
+            </div>
+            <div class="main">
+                <div class="totay_find w_1240">
+                    <div class="t_find_title">
+                        <h1>오늘의 발견</h1>
+                        <span>오늘 쿠팡이 엄선한 가장 HOT한 상품</span>
+                    </div>
+                    <div class="t_find_container">
+                        <div class="t_find_item">
+                            <img src="./img_cp/today_f/find_m1.jpg" alt="상품배너이미지">
+                        </div>
+                        <div class="t_find_item">
+                            <img src="./img_cp/today_f/find_m2.jpg" alt="상품배너이미지">
+                        </div>
+                        <div class="t_find_item m_r_0">
+                            <img src="./img_cp/today_f/find3.jpg" alt="상품배너이미지">
+                        </div>
+                        <div class="t_find_item">
+                            <img src="./img_cp/today_f/find4.jpg" alt="상품배너이미지">
+                        </div>
+                        <div class="t_find_item">
+                            <img src="./img_cp/today_f/find5.jpg" alt="상품배너이미지">
+                        </div>
+                        <div class="m_r_0 t_find_item">
+                            <img src="./img_cp/today_f/find6.jpg" alt="상품배너이미지">
+                        </div>
+                    </div>
+                </div>
+                <div class="gold_box">
+                    <div class="gold_title">
+                        <h1>골드박스 기간한정 특가</h1>
+                    </div>
+                    <div class="gold_container">
+                        <div class="gold_itme">
+                            <div class="gold_img">
+                                <img src="./img_cp/gold_box/gold_1.jpg" alt="상품이미지">
+                                <div class="sale">
+                                    <p>75%</p>
+                                </div>
+                            </div>
+                            <div class="gold_item_title">
+                                <p>해피바스 정말 순한 바디워시</p>
+                            </div>
+                            <div class="item_price">
+                                <p><del>40,000원</del></p>
+                                <p><b>9,900원</b></p>
+                            </div>
+                        </div>
+                        <div class="gold_itme">
+                            <div class="gold_img">
+                                <img src="./img_cp/gold_box/gold_2.jpg" alt="상품이미지">
+                                <div class="sale">
+                                    <p>74%</p>
+                                </div>
+                            </div>
+                            <div class="gold_item_title">
+                                <p>미장센 퍼펙트 세럼 트리트먼트</p>
+                            </div>
+                            <div class="item_price">
+                                <p><del>39,000원</del></p>
+                                <p><b>9,900원</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mid_banner">
+                    <a href="./product_mobile.html">
+                        <img src="./img_cp/mid_banner/mid_b_m.jpg" alt="상품이미지">
+                    </a>
+                </div>
+                <div class="today_shopping w_1240">
+                    <div class="t_s_title">
+                        <p>오늘의</p>
+                        <p>쇼핑제안</p>
+                    </div>
+                    <div class="t_s_container">
+                        <div class="t_s_sec">
+                            <div class="t_s_img img1">
+                                <a href="#"></a>
+                            </div>
+                            <p>편안한 홈웨어</p>
+                        </div>
+                        <div class="t_s_sec">
+                            <div class="t_s_img img2">
+                                <a href="#"></a>
+                            </div>
+                            <p>여성 캐주얼</p>
+                        </div>
+                        <div class="t_s_sec">
+                            <div class="t_s_img img3">
+                                <a href="#"></a>
+                            </div>
+                            <p>오늘의 특별 코디</p>
+                        </div>
+                        <div class=" m_r_0 t_s_sec">
+                            <div class="t_s_img img4">
+                                <a href="#"></a>
+                            </div>
+                            <p>캐시미어 목도리</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="c_recommend w_1240">
+                    <div class="c_re_title">
+                        <p>HOT! TREND</p>
+                        <p>카테고리별</p>
+                        <p>추천 광고상품</p>
+                    </div>
+                </div>
+                <div class="tab_btn">
+                    <div class="c_rd_btn rd_re1 t_checked">
+                        <p>가전/디지털</p>
+                    </div>
+                    <div class="c_rd_btn rd_re2">
+                        <p>여성패션</p>
+                    </div>
+                    <div class="c_rd_btn rd_re3">
+                        <p>남성패션</p>
+                    </div>
+                    <div class="c_rd_btn rd_re4">
+                        <p>뷰티</p>
+                    </div>
+                    <div class="c_rd_btn rd_re5">
+                        <p>식품</p>
+                    </div>
+                </div>
+                <div class="c_re_contant">
+                    <div class="tab4" id="tab4">
+                        <div class="re_item">
+                            <a href="./product_information_mobile.html">
+                                <div class="re_img">
+                                    <img src="./img_cp/recommend/m_re1.jpg" alt="추천상품">
+                                </div>
+                                <div class="re_title">
+                                    <p>메이드조이 세탁소용 보풀제거기 MX-200, 화이트 + 로즈</p>
+                                </div>
+                                <div class="re_price">
+                                    <p>39,000원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="re_item m_r_0">
+                            <a href="./product_information_mobile.html">
+                                <div class="re_img">
+                                    <img src="./img_cp/recommend/m_re2.jpg" alt="추천상품">
+                                </div>
+                                <div class="re_title">
+                                    <p>주연테크 UHE IPS 189cm 무결점 퍼펙트 에디션 TV</p>
+                                </div>
+                                <div class="re_price">
+                                    <p>1,240,000원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="re_item">
+                            <a href="./product_information_mobile.html">
+                                <div class="re_img">
+                                    <img src="./img_cp/recommend/m_re3.jpg" alt="추천상품">
+                                </div>
+                                <div class="re_title">
+                                    <p>카카오프렌즈 사각 PD 보조배터리 20000m Ah USB</p>
+                                </div>
+                                <div class="re_price">
+                                    <p>49,820원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="re_item m_r_0">
+                            <a href="./product_information_mobile.html">
+                                <div class="re_img">
+                                    <img src="./img_cp/recommend/m_re4.jpg" alt="추천상품">
+                                </div>
+                                <div class="re_title">
+                                    <p>샤오미 미밴드5 한글버전, 단일 상품, 블랙</p>
+                                </div>
+                                <div class="re_price">
+                                    <p>33,410원</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="f_w">
+                    <div class="cou_name">
+                        <a href="#"></a>
+                    </div>
+                    <div class="info">
+                        <p>쿠팡(주)대표이사</p>
+                        <p>서울시 송파구 송파대로</p>
+                        <p>사업자 등록번호</p>
+                        <p>통신판매업신고</p>
+                    </div>
+                    <div class="service">
+                        <p>365 고객센터</p>
+                        <p>1577-0000</p>
+                    </div>
+                    <div class="footer_link">
+                        <div class="link facebook"></div>
+                        <div class="link insta"></div>
+                        <div class="link blog"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="#wrap" class="btn_top">
+                <img src="./img_cp/logo/top_icon.png" alt="탑버튼">
+            </a>
+        </div>
+    </div>
+    <script>
+
+    </script>
+</body>
+</html>
