@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배스킨라빈스</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper_bundle.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/common.js"></script>
+    <!-- <script src="./js/swiper_bundle.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js" integrity="sha512-c0NksyGPH0LUkeV3kgNU6p98oYwacImv508UsTDKqTWpEk1LFDMC8falFf9A2HZ8vt1ZIj3K4TNw2YT4Cid28Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="shortcut icon" href="./img_br/icon_logo/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="wrap">
+        <div class="point">Click!</div>
+        <a href="./event.html" class="event_page_btn"></a>
+        <div class="search_modal"></div>
+        <div class="search_btn_box">
+            <div class="search_btn">
+                <img src="./img_br/icon_logo/outline_search_white_24dp.png" alt="검색 돋보기" class="search_btn_b">
+            </div>
+            <div class="search_pan">
+                <input type="text" value="">
+                <img src="./img_br/icon_logo/outline_search_white_24dp.png" alt="검색 돋보기">
+            </div>
+        </div>
+        <div class="header">
+            <div class="header_top">
+                <div class="h_top_btn">
+                    <a href="#" class="h_top login">LOGIN</a>
+                    <div class="h_top h_top_line">|</div>
+                    <a href="#" class="h_top join">JOIN</a>
+                    <div class="h_top h_top_line">|</div>
+                    <a href="#" class="h_top contact">CONTACT US</a>
+                    <div class="h_top h_top_line">|</div>
+                    <a href="#" class="h_top language">LANGUAGE</a>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="./index.html">로고</a>
+            </div>
+            <div class="nav">
+                <ul class="nav_ul">
+                    <li class="nav_li">
+                        <a href="product.html?cate_no=0">MENU</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="./event.html">EVENT</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="./event.html">FLAVOR OF THE MONTH</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="product.html?cate_no=0">STORE</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="product.html?cate_no=0">ABOUT</a>
+                    </li>
+                </ul>
+                <div class="pan">
+                    <div class="nav_pan_ul">
+                        <div class="nav_pan_li nav_pan1">
+                            <a href="product.html?cate_no=0">아이스크림</a>
+                            <a href="product.html?cate_no=1">아이스크림 케이크</a>
+                            <a href="product.html?cate_no=2">음료</a>
+                            <a href="product.html?cate_no=3">커피</a>
+                            <a href="product.html?cate_no=4">디저트</a>
+                        </div>
+                        <div class="nav_pan_li nav_pan2">
+                            <a href="./event.html">진행중인 이벤트</a>
+                            <a href="./event.html">당첨자 발표</a>
+                            <div class="nav_line"></div>
+                        </div>
+                        <div class="nav_pan_li nav_pan3">
+                            <a href="./event.html">
+                                <img src="./img_br/icon_logo/nav_pan_ice.png" alt="신제품 이미지">
+                            </a>
+                            <div class="nav_line"></div>
+                        </div>
+                        <div class="nav_pan_li nav_pan4">
+                            <a href="product.html?cate_no=0">매장찾기</a>
+                            <a href="product.html?cate_no=0">고객센터</a>
+                        </div>
+                        <div class="nav_pan_li nav_pan5">
+                            <a href="product.html?cate_no=0">공지사항</a>
+                            <a href="product.html?cate_no=0">보도자료</a>
+                            <a href="product.html?cate_no=0">채용정보</a>
+                            <a href="product.html?cate_no=0">점포개설문의</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ham_box show_at_sm">
+                <div class="ham_btn_box">
+                    <div class="line" id="line_top"></div>
+                    <div class="line" id="line_mid"></div>
+                    <div class="line" id="line_bot"></div>
+                </div>
+                <div class="ham_pan">
+                    <div class="close_btn">
+                        <img src="./img_br/icon_logo/close_button.png" alt="메뉴닫기버튼">
+                    </div>
+                    <div class="ham_logo"></div>
+                    <div class="accordion">
+                        <div class="acdion_title">
+                            <p>MENU</p>
+                            <div class="acdion_desc">
+                                <a href="product.html?cate_no=0">
+                                     <p>아이스크림</p>
+                                </a>
+                                <a href="product.html?cate_no=1">
+                                     <p>아이스크림 케이크</p>
+                                </a>
+                                <a href="product.html?cate_no=2">
+                                     <p>음료</p>
+                                </a>
+                                <a href="product.html?cate_no=3">
+                                     <p>커피</p>
+                                </a>
+                                <a href="product.html?cate_no=4">
+                                     <p>디저트</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="acdion_title">
+                            <p>EVENT</p>
+                            <div class="acdion_desc">
+                               <a href="./event.html"> 
+                                   <p>진행중인 이벤트</p>
+                                </a>
+                               <a href="./event.html"> 
+                                   <p>당첨자 발표</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="acdion_title">
+                            <p>FLAVOR OF THE MONTH</p>
+                            <div class="acdion_desc">
+                               <a href="./event.html">
+                                   <p>아이스 홈런볼</p>
+                                </a> 
+                            </div>
+                        </div>
+                        <div class="acdion_title">
+                            <p>STORE</p>
+                            <div class="acdion_desc">
+                                <a href="product.html?cate_no=0">
+                                    <p>매장찾기</p>
+                                </a>
+                                <a href="product.html?cate_no=0">
+                                    <p>고객센터</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="acdion_title">
+                            <p>ABOUT</p>
+                            <div class="acdion_desc">
+                                <a href="product.html?cate_no=0">
+                                    <p>공지사항</p>
+                                </a>
+                                <a href="product.html?cate_no=0">
+                                    <p>보도자료</p>
+                                </a>
+                                <a href="product.html?cate_no=0">
+                                    <p>채용정보</p>
+                                </a>
+                                <a href="product.html?cate_no=0">
+                                    <p>점포개설문의</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="m_b_box">
+                <div class="m_b">
+                    <a href="./event.html">
+                        <img src="./img_br/main_b/mb1.jpg" alt="메인배너">
+                    </a>
+                </div>
+                <div class="m_b">
+                    <a href="./event.html">
+                    <img src="./img_br/main_b/mb2.jpg" alt="메인배너">
+                    </a>
+                </div>
+                <div class="m_b">
+                    <a href="./event.html">
+                    <img src="./img_br/main_b/mb3.png" alt="메인배너">
+                    </a>
+                </div>
+                <div class="m_b">
+                    <a href="./event.html">
+                    <img src="./img_br/main_b/mb4.jpg" alt="메인배너">
+                    </a>
+                </div>
+                <div class="m_b_btn" id="m_b_btn_L"></div>
+                <div class="m_b_btn" id="m_b_btn_R"></div>
+                <div class="indi_box">
+                    <div class="indi indi_active"></div>
+                    <div class="indi"></div>
+                    <div class="indi"></div>
+                    <div class="indi"></div>
+                </div>
+            </div>
+            <div class="sec1_container">
+                <div class="w_1220">
+                    <div class="sec1_title"> 
+                        RANKINK THIS WEEK
+                        <div class="spon_img">
+                            <img src="./img_br/icon_logo/spon.png" alt="스푼이미지">
+                        </div>
+                    </div>
+                    <div class="sec1_title_mini">이번 주 가장 많은 사랑을 받은 아이스크림은?</div>
+                    <div class="sec1_item s1_item1"></div>
+                    <div class="sec1_item s1_item2"></div>
+                    <div class="sec1_item s1_item3 sec1_m_r0"></div>
+                </div>
+            </div>
+            <div class="sec2_container sec2_show_at_lg">
+                <div class="sec2_title"> 
+                    이 달의 신제품
+                </div>
+                <div class="sec2_title_mini">
+                    이번엔 무슨 맛이 새로 나왔을까?
+                </div>
+                <div class="sec2_item_title">
+                    <div class="sec2_p" id="sec2_p1">
+                        <p>아이스 홈런볼</p>
+                    </div>
+                    <div class="sec2_p" id="sec2_p2">
+                        <p>블랙 소르베</p>
+                    </div>
+                    <div class="sec2_p" id="sec2_p3">
+                        <p>아빠는 딸바봉</p>
+                    </div>
+                    <div class="sec2_p" id="sec2_p4">
+                        <p>트리플 치즈 러브</p>
+                    </div>
+                    <div class="sec2_p" id="sec2_p5">
+                        <p>러브미</p>
+                    </div>
+                </div>
+                <div class="sec2_item">
+                    <img src="./img_br/product/ice_cream/19.png" alt="신제품이미지">
+                </div>
+                <div class="sec2_item">
+                    <img src="./img_br/product/ice_cream/2.png" alt="신제품이미지">
+                </div>
+                <div class="sec2_item">
+                    <img src="./img_br/product/ice_cream/3.png" alt="신제품이미지">
+                </div>
+                <div class="sec2_item">
+                    <img src="./img_br/product/ice_cream/4.png" alt="신제품이미지">
+                </div>
+                <div class="sec2_item sec2_m_r0">
+                    <img src="./img_br/product/ice_cream/5.png" alt="신제품이미지">
+                </div>
+            </div>
+            <div class="sec2_show_at_sm">
+                <div class="sec2_title"> 
+                    이 달의 신제품
+                </div>
+                <div class="sec2_title_mini">
+                    이번엔 무슨 맛이 새로 나왔을까?
+                </div>
+                <div class="sec2_sm_item_box">
+                    <div class="sec2_sm_item_b">
+                        <img src="./img_br/product/ice_cream/19.png" alt="신상품이미지">
+                        <p>아이스 홈런볼</p>
+                    </div>
+                    <div class="sec2_sm_item">
+                        <img src="./img_br/product/ice_cream/2.png" alt="신제품이미지">
+                        <p>블랙 소르베</p>
+                    </div>
+                    <div class="sec2_sm_item sec2_sm_m_r0">
+                        <img src="./img_br/product/ice_cream/3.png" alt="신제품이미지">
+                        <p>아빠는 딸바봉</p>
+                    </div>
+                    <div class="sec2_sm_item">
+                        <img src="./img_br/product/ice_cream/4.png" alt="신제품이미지">
+                        <p>트리플 치즈 러브</p>
+                    </div>
+                    <div class="sec2_sm_item sec2_sm_m_r0">
+                        <img src="./img_br/product/ice_cream/5.png" alt="신제품이미지">
+                        <p>러브미</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sec3_container">
+                <div class="w_1220">
+                    <div class="sec3_L">
+                        <div class="sec3_title">
+                        <p class="pick_txt">Pick</p>
+                        <p class="menu_txt">
+                            BR's
+                            <br>
+                            MENU
+                        </p>
+                        <!-- <p class="ment_txt2">
+                            오늘은 어떤 걸 먹을지
+                            <br>
+                            고민 NO NO
+                        </p> -->
+                        <div class="br_time_txt">지금은 베라 먹을 시간!</div>
+                        <div id="br_time" class="br_time"></div>
+                        </div>
+                    </div>
+                    <div class="sec3_R">
+                        <a href="product_info.html?cate_no=1&item_no=8" class="sec3_item">
+                            <img src="./img_br/product/cake/8.png" alt="추천상품이미지">
+                            <div class="sec3_pan">
+                                <p>다정한 초코 베어</p>
+                                <p>#다정한 초코베어 #초코</p>
+                                <div class="sec3_buy">
+                                    <div class="sec3_buy_btn">
+                                        구매하기
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="product_info.html?cate_no=1&item_no=4" class="sec3_item">
+                            <img src="./img_br/product/cake/4.png" alt="추천상품이미지">
+                            <div class="sec3_pan">
+                                <p>리얼 27 큐브</p>
+                                <p>#큐브 #아몬드봉봉</p>
+                                <div class="sec3_buy">
+                                    <div class="sec3_buy_btn">
+                                        구매하기
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="product_info.html?cate_no=1&item_no=11" class="sec3_item sec3_m_r0">
+                            <img src="./img_br/product/cake/11.png" alt="추천상품이미지">
+                            <div class="sec3_pan">
+                                <p>시크릿 라이언</p>
+                                <p>#슈팅스타 #라이언</p>
+                                <div class="sec3_buy">
+                                    <div class="sec3_buy_btn">
+                                        구매하기
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="product_info.html?cate_no=4&item_no=4" class="sec3_item">
+                            <img src="./img_br/product/desert/4.png" alt="추천상품이미지">
+                            <div class="sec3_pan">
+                                <p>아이스 마카롱 체리쥬빌레</p>
+                                <p>#아이스마카롱 #체리</p>
+                                <div class="sec3_buy">
+                                    <div class="sec3_buy_btn">
+                                        구매하기
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="product_info.html?cate_no=4&item_no=6" class="sec3_item">
+                            <img src="./img_br/product/desert/6.png" alt="추천상품이미지">
+                            <div class="sec3_pan">
+                                <p>아이스 모찌 스트로베리</p>
+                                <p>#아이스모찌 #딸기</p>
+                                <div class="sec3_buy">
+                                    <div class="sec3_buy_btn">
+                                        구매하기
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="product_info.html?cate_no=4&item_no=11" class="sec3_item sec3_m_r0">
+                            <img src="./img_br/product/desert/11.png" alt="추천상품이미지">
+                            <div class="sec3_pan">
+                                <p>미니 아이스 모찌</p>
+                                <p>#아이스모찌 #스트로베리</p>
+                                <div class="sec3_buy">
+                                    <div class="sec3_buy_btn">
+                                        구매하기
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="product_info.html?cate_no=0&item_no=19" class="sec3_item">
+                            <img src="./img_br/product/ice_cream/19.png" alt="추천상품이미지">
+                            <div class="sec3_pan">
+                                <p>아이스 홈런볼</p>
+                                <p>#홈런볼 #초코</p>
+                                <div class="sec3_buy">
+                                    <div class="sec3_buy_btn">
+                                        구매하기
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="product_info.html?cate_no=0&item_no=18" class="sec3_item">
+                            <img src="./img_br/product/ice_cream/18.png" alt="추천상품이미지">
+                            <div class="sec3_pan">
+                                <p>오레오 쿠키 앤 크림</p>
+                                <p>#오레오 #쿠키</p>
+                                <div class="sec3_buy">
+                                    <div class="sec3_buy_btn">
+                                        구매하기
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="product_info.html?cate_no=0&item_no=17" class="sec3_item sec3_m_r0">
+                            <img src="./img_br/product/ice_cream/17.png" alt="추천상품이미지">
+                            <div class="sec3_pan">
+                                <p>베리베리 스트로베리</p>
+                                <p>#베리베리 #딸기</p>
+                                <div class="sec3_buy">
+                                    <div class="sec3_buy_btn">
+                                        구매하기
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="sec_line"></div>
+            <div class="sec4_container">
+                <div class="sec4_title">
+                    <p>EVENT</p>
+                </div>
+                <div class="sec4_title_mini">
+                    <p>베라31만큼 다양한 혜택</p>
+                </div>
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="./img_br/sec4_event_img/1.png" alt="이벤트 이미지">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img_br/sec4_event_img/2.png" alt="이벤트 이미지">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img_br/sec4_event_img/3.png" alt="이벤트 이미지">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img_br/sec4_event_img/4.jpg" alt="이벤트 이미지">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img_br/sec4_event_img/5.png" alt="이벤트 이미지">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img_br/sec4_event_img/6.png" alt="이벤트 이미지">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img_br/sec4_event_img/7.png" alt="이벤트 이미지">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img_br/sec4_event_img/8.png" alt="이벤트 이미지">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img_br/sec4_event_img/9.png" alt="이벤트 이미지">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+            <div class="sec_line"></div>
+            <div class="sec5_container">
+                <div class="w_1220">
+                    <div class="sec5_title sec5_title_L">
+                        <p> BR STORE</p>
+                        <div class="sec5_title_mini">주변에 매장이 어디있지?</div>
+                        <div class="sec5_L sec5_item">
+                            <div class="sec5_pan"></div>
+                        </div>
+                    </div>
+                    <div class="sec5_title sec5_title_R">
+                        <p>HAPPY ORDER & DELIVERY</p>
+                        <div class="sec5_title_mini">집에서 편하게 베라31 즐기자</div>
+                        <div class="sec5_R sec5_item">
+                            <div class="sec5_pan"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec6_container">
+                <div class="sec6_pan">
+                    <div class="sec6_title">SNS</div>
+                    <div class="sec6_item_box">
+                        <div class="sec6_item">
+                            <a href="#">
+                                <img src="./img_br/icon_logo/sns_blog.png" alt="sns연결 바로가기">
+                            </a>
+                        </div>
+                        <div class="sec6_item">
+                            <a href="#">
+                                <img src="./img_br/icon_logo/sns_facebook.png" alt="sns연결 바로가기">
+                            </a>
+                        </div>
+                        <div class="sec6_item">
+                            <a href="#">
+                                <img src="./img_br/icon_logo/sns_instagram.png" alt="sns연결 바로가기">
+                            </a>
+                        </div>
+                        <div class="sec6_item">
+                            <a href="#">
+                                <img src="./img_br/icon_logo/sns_twitter.png" alt="sns연결 바로가기">
+                            </a>
+                        </div>
+                        <div class="sec6_item">
+                            <a href="#">
+                                <img src="./img_br/icon_logo/sns_youtube.png" alt="sns연결 바로가기">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="w_1220">
+                <ul class="ft_ul">
+                    <li class="ft_li">
+                        점포개설문의
+                    </li>
+                    <li class="ft_li">
+                        채용문의
+                    </li>
+                    <li class="ft_li">
+                        윤리신고센터
+                    </li>
+                    <li class="ft_li">
+                        이용약관
+                    </li>
+                    <li class="ft_li">
+                        개인정보처리방침
+                    </li>
+                    <li class="ft_li">
+                        운영관리방침
+                    </li>
+                    <li class="ft_li ft_m_r0">
+                        거래희망회사 사전등록
+                    </li>
+                </ul>
+                <div class="ft_logo">
+                    <img src="./img_br/icon_logo/footer_logo.png" alt="푸터로고">
+                </div>
+                <div class="ft_desc">
+                    <p>
+                        사업자 등록번호 : 000-00-00000 비알코리아(주) 대표이사 도세호 서울특별시 서초구 남부순환로 0000(양재동 00-000번지)
+                    </p>
+                    <p>
+                        TEL : 000-000-0000 개인정보관리책임자 : 조아정
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

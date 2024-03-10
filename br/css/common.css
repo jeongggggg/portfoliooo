@@ -1,0 +1,649 @@
+/* 폰트 */
+@font-face {
+    font-family: 'notosans';
+
+    src: local('fonts/notosans'), 
+        url(./fonts/NotoSansMonoCJKkr-Regular.ttf) format('truetype'),
+        url(fonts/NotoSansMonoCJKkr-Regular.woff) format('woff');
+
+    font-style: normal;
+    font-weight: normal;
+} 
+
+@font-face {
+    font-family: 'brfont';
+
+    src: local('fonts/brfont'),
+        url(./fonts/br_b.ttf) format('truetype'),
+        url(./fonts/br_r.woff) format('woff'),
+        url(./fonts/br_b_otf.otf) format('opentype'),
+        url(./fonts/br_r_otf.otf) format('opentype');
+
+    font-style: normal;
+    font-weight: normal;
+} 
+
+@font-face {
+    font-family: 'Cafe24Dangdanghae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.2/Cafe24Dangdanghae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RixYeoljeongdo_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'ROKABold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.1/ROKABold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '양진체';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 기본 설정 */
+
+body{
+    
+    margin:0;
+    font-family: 'notosans';
+
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+p{
+    margin: 0;
+}
+
+.wrap{
+    overflow: hidden;
+}
+
+.w_1220{
+    width: 100%;
+    max-width: 1220px;
+    min-width: 480px;
+    margin: 0 auto;
+    min-width: 280px;
+}
+
+/* 검색버튼, 이벤트 버튼, 말풍선*/
+
+.point{
+    width: 80px;
+    height: 36px;
+    background: #000;
+    color: #fff;
+    line-height: 36px;
+    text-align: center;
+    position: fixed;
+    right: 13px;
+    bottom: 200px;
+    font-size: 16px;
+    border-radius: 18px;
+    z-index: 99;
+    font-family: 'brfont';
+
+    animation: point 1s infinite;
+}
+
+.point::after{
+    border-top: 0px solid transparent;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid #000;
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 33px;
+    transform: rotate(181deg);
+
+    /* animation: point 1s infinite; */
+}
+
+@keyframes point {
+    0% {background-color: magenta; transform: translateY(0px);}
+    50% {background-color: mediumslateblue; transform: translateY(5px);}
+    100% {background-color: magenta; transform: translateY(0px);}
+}
+
+@keyframes point_after {
+    0% {background-color: magenta;}
+    50% {background-color: mediumslateblue;}
+    100% {background-color: magenta;}
+}
+
+.event_page_btn{
+    width: 70px;
+    height: 70px;
+    background: url(../img_br/icon_logo/side_img_01.png) no-repeat center / contain;
+    animation: event_btn_move 1s infinite;
+    perspective: 1000px;
+
+    position: fixed;
+    right: 10px;
+    bottom: 110px;
+    z-index: 99999;
+
+    /* transform:rotateY(50deg) */
+}
+
+@keyframes event_btn_move{
+    0%{transform: rotate(0);}
+    50%{transform: rotate(50deg);}
+    100%{transform: rotate(0deg);}
+}
+
+.search_btn_box{
+    position: fixed;
+    right: 10px;
+    bottom: 90px;
+    z-index: 999999;
+}
+
+.search_btn{
+    width: 60px;
+    height: 60px;
+    background: #ff7c98;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.search_btn > img{
+    position: absolute;
+    left: 7px;
+    top: 7px;
+}
+
+.search_pan{
+    /* position: relative; */
+    position: absolute;
+    /* width: 0px;
+    height: 0px; */
+    border: 50%;
+    border-radius: 50%;
+    left: -30px;
+    top: 30px;
+    overflow: hidden;
+    background: #ff7c98;
+    transition: all 0.3s;
+
+    transform: scale(0);
+    /* display: none; */
+    width: 50px;
+    height: 50px;
+}
+
+.search_pan > input {
+    border: none;
+    border-bottom: 2px solid #fff;
+    width: 74px;
+    height: 14px;
+    position: absolute;
+    left: 43px;
+    top: 85px;
+    outline: none;
+    color: #fff;
+    background: #ff7c98;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+}
+
+.search_pan > img{
+    position: absolute;
+    left: 117px;
+    top: 82px;
+    width: 20px;
+    height: 20px;
+}
+
+.search_modal{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 999999;
+}
+
+/* 헤더 */
+
+.header{
+    width: 100%;
+    background: #fff;
+    /* height: 196px; */
+    /* border-top: 3px solid #ff7c98; */
+    /* position: relative; */
+}
+
+.header_top{
+    width: 100%;
+    height: 30px;
+    background: #ff7c98;
+    padding-right: 20px;
+    box-sizing: border-box;
+    font-family: "brfont";
+
+    /* position: relative; */
+}
+
+.h_top_btn{
+    height: 100%;
+    float: right;
+    font-size: 13px;
+}
+
+.h_top{
+    float: left;
+    margin: 0 15px;
+    line-height: 32px;
+    color: #fff;
+    font-family: "brfont";
+}
+
+.h_top_line{
+    margin: 0;
+    font-size: 2px;
+    line-height: 34px;
+}
+
+.logo{
+    width: 120px;
+    height: 150px;
+    background: url(../img_br/icon_logo/ham_pan_logo.png) no-repeat center / contain;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.logo > a{
+    color: transparent;
+    text-indent: -9999999px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* 반응형 햄버거 버튼  */
+
+.show_at_sm{
+    display: none;
+}
+
+.ham_box{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 20px;
+    top: 70px;
+    cursor: pointer;
+}
+.hamberg_btn_box {
+    width: 60px;
+    height: 100%;
+    float: left;
+    padding: 15px 15px;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 5px;
+    background: #ff7c98;
+    margin: 8px 0;
+    border-radius: 30px;
+
+}
+
+#line_mid{
+    width: 60%;
+}
+
+.ham_pan{
+    width: 350px;
+    height: 100vh;
+    background: gray;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background: #fbedf0;
+    box-sizing: border-box;
+    z-index: 999999999;
+    transition: all 0.5s;
+    box-shadow: 0px 0px 14px #777;
+    overflow-y: scroll;
+
+    padding: 71px 50px;
+}
+
+.close_btn > img{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.ham_logo{
+    height: 100px;
+    background: url(../img_br/icon_logo/ham_pan_logo.png) no-repeat center / contain;
+    margin-bottom: 200px;
+}
+
+.accordion{
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.acdion_title{
+    width: 100%;
+    /* padding: 10px 0; */
+    font-family: 'brfont';
+    font-size: 17px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    background: #ec7c94;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.acdion_desc{
+    background: #fff;
+    overflow: hidden;
+    /* height: 0; */
+    cursor: pointer;
+    display: none;
+    color: #777;
+    /* font-family: "Cafe24Dangdanghae"; */
+}
+
+.acdion_active{
+    height: 100%;
+}
+/* ///////////////////////////////////////// */
+
+/* nav */
+
+.nav{
+    width: 100%;
+    height: 48px;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    text-align: center;
+    font-family: 'brfont';
+    /* background: #fff; */
+
+    position: relative;
+
+}
+
+.nav_ul{
+    height: 100%;
+    display: inline-block;
+}
+
+.nav_li{
+    height: 100%;
+    float: left;
+    padding: 0 50px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.nav_li > a:hover{
+    color: #ff7c98;
+}
+
+.nav_li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    line-height: 48px;
+}
+
+.search_box{
+    width: 54px;
+    height: 54px;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.pan{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 0);
+    background: #fdf7f9;
+    z-index: 999999999999;
+
+    transition: all 0.3s;
+
+}
+
+.pan_active{
+    height: 294px;
+    border: 1px solid #e1e1e1;
+    transition: all 0.3s;
+}
+
+.nav_pan_ul{
+    width: 814px;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 15px;
+    color: #777;
+    position: relative;
+}
+
+.nav_pan_li{
+    /* width: calc((100% - 40px) / 5); */
+    float: left;
+    position: absolute;
+    top: 0;
+
+}
+
+.nav_pan1{
+    left: 0;
+}
+
+.nav_pan2{
+    left: 18%;
+}
+
+.nav_pan3{
+    left: 37%;
+}
+
+.nav_pan4{
+    right: 21.5%;
+}
+
+.nav_pan5{
+    right: 1.5%;
+}
+
+.nav_pan_li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 20px 0px;
+    font-family: 'Cafe24Dangdanghae';
+    cursor: pointer;
+}
+
+.nav_pan_li > a:hover{
+    color: #ff7c98;
+    text-decoration: underline;
+}
+
+
+.nav_line{
+    width: 1px;
+    height: 240px;
+    background: #ddd;
+
+    position: absolute;
+    right: -27px;
+    top: 0px;
+}
+
+/* 푸터 */
+
+.footer{
+    width: 100%;
+    /* height: 240px; */
+    margin-top: 90px;
+    border-top: 2px solid #ff7c98;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.ft_li{
+    width: calc((100% - 60px) / 7);
+    float: left;
+    font-size: 14px;
+    margin-right: 10px;
+    text-align: center;
+
+}
+
+.ft_m_r0{
+    margin-right: 0;
+}
+
+.ft_logo{
+    width: 130px;
+    padding-top: 90px;
+    margin: 0 auto;
+}
+
+.ft_desc{
+    margin-top: 50px;
+}
+
+.ft_desc > p{
+    font-size: 12px;
+    text-align: center;
+}
+
+@media screen and (max-width:900px) {
+
+    .header_top{
+        padding-right: 0;
+    }
+
+    .header{
+        height: 110px;
+        border-bottom: 1px solid #ddd;
+        box-sizing: border-box;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999999;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .show_at_sm{
+        display: block;
+    }
+
+    .logo{
+        width: 70px;
+        height: 80px;
+        background: url(../img_br/icon_logo/ham_pan_logo.png) no-repeat center / contain;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+
+    .ft_logo{
+        padding-top:60px;
+    }
+
+    .ft_li{
+        display: none;
+    }
+    
+    .ham_box{
+        top: 45px;
+    }
+
+    .main{
+        padding-top: 110px;
+    }
+
+
+}
+
+@media screen and (max-width: 480px){
+
+    .ft_li{
+        font-size: 10px;
+    }
+}
+
+  /* 섹션 구분하는 핑크색 라인 */
+
+  .sec_line{
+    width: 100%;
+    max-width: 1220px;
+    height: 4px;
+    margin: 0 auto;
+    background: url(../img_br/sec2_bg/line_bg.png) repeat-x;
+}

@@ -1,0 +1,337 @@
+.item_info_spon{
+    width: 45px;
+    height: 45px;
+    background: url(../img_br/icon_logo/icon_title_top.png) no-repeat center / contain;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.item_info_title{
+    width: 100%;
+    text-align: center;
+    font-family: 'brfont';
+    margin-top: 20px;
+    font-size: 39px;
+}
+
+.item_info_desc{
+    width: 100%;
+    text-align: center;
+    font-family: 'brfont';
+    font-size: 17px;
+    color: #ff7c98;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.item_info_img{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px solid #ff7c98;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 15px #ddd;
+    transform: rotateY(360deg);
+    transition: all 1s;
+    perspective-origin: center;
+    perspective: 200px;
+
+
+}
+
+.item_info_img > img{
+    width: 100%;
+
+}
+
+.item_info_container{
+    position: relative;
+}
+
+.sns_box{
+    position: absolute;
+    right: 0;
+    bottom: -3%;
+}
+
+.sns_icon{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 5px;
+}
+
+.sns_icon > img{
+    width: 100%;
+}
+
+.item_buy{
+    width: 17%;
+    background: #ff7c98;
+    border-radius: 28px;
+    color: #fff;
+    font-family: 'brfont';
+    font-size: 25px;
+    margin: 50px 0;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+/* 아이스크림 사이즈 */
+
+.ice_cream_size_title{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 19px;
+    font-family: 'brfont';
+    color: #ff7c98;
+}
+
+.size_box{
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.item{
+    width: calc(100% / 5);
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 20px;
+
+    position: absolute;
+    top: 0;
+}
+
+.size_img{
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.size_img > img{
+    width: 30%;
+    padding-left: 35%;
+}
+
+.size_desc{
+    width: 100%;
+    font-family: 'brfont';
+    text-align: center;
+}
+
+.size_desc > p:nth-child(1){
+    font-size: 18px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+
+}
+
+.size_desc > p:nth-child(2){
+    font-size: 15px;
+    color: #777;
+
+}
+
+.btn_slide {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    background: transparent;
+    cursor: pointer;
+    color: #ff7c98;
+
+    font-size: 30px;
+    outline: none;
+    border: none;
+}
+#btn_L {left: 0;}
+#btn_R {right: 0;}
+
+/* 핫커피 */
+
+.hot_coffee_title{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 19px;
+    font-family: 'brfont';
+    color: #483834;
+}
+
+.size_box1{
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.item1{
+    width: calc(100% / 5);
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+}
+
+.btn_slide1 {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    background: transparent;
+    cursor: pointer;
+    color: #ff7c98;
+
+    font-size: 30px;
+    outline: none;
+    border: none;
+}
+#btn_L1 {left: 0;}
+#btn_R1 {right: 0;}
+
+/* 아이스 커피 */
+
+.ice_coffee_title{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 19px;
+    font-family: 'brfont';
+    color: #4bded0;
+}
+
+.size_box2{
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.item2{
+    width: calc(100% / 5);
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+}
+
+.btn_slide2 {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    background: transparent;
+    cursor: pointer;
+    color: #ff7c98;
+
+    font-size: 30px;
+    outline: none;
+    border: none;
+}
+#btn_L2 {left: 0;}
+#btn_R2 {right: 0;}
+
+/* .item2 > img{
+    width: 100%;
+} */
+
+
+@media screen and (max-width:1008px) {
+    .item,
+    .item1,
+    .item2{
+        width: calc(100% / 4);
+    }
+}
+
+@media screen and (max-width:810px) {
+    .item,
+    .item1,
+    .item2{
+        width: calc(100% / 3);
+    }
+
+    .sns_icon{
+        display: none;
+    }
+}
+
+@media screen and (max-width:613px) {
+    .item,
+    .item1,
+    .item2{
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 550px){
+
+    .item_info_desc{
+        font-size: 14px;
+    }
+
+    .item_buy{
+        width: 35%;
+        background: #ff7c98;
+        border-radius: 28px;
+        color: #fff;
+        font-family: 'brfont';
+        font-size: 25px;
+        margin: 50px 0;
+        margin: 0 auto;
+        margin-top: 30px;
+        text-align: center;
+        padding: 8px 0;
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (max-width:413px) {
+
+
+    .item_info_title{
+        font-size : 39px;                           
+    }
+
+    .item_info_img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .size_box,
+    .size_box1,
+    .size_box2{
+        height: 300px;
+    }
+
+    .item,
+    .item1,
+    .item2{
+        width: calc(100% / 1);
+    }
+
+    .item1 > img,
+    .item2 > img{
+       width: 100%;
+    }
+}

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배스킨라빈스</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/product_info.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/product_info.js"></script>
+    <script src="./js/item_list.js"></script>
+    <link rel="shortcut icon" href="./img_br/icon_logo/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="wrap">
+        <div class="point">Click!</div>
+        <a href="./event.html" class="event_page_btn"></a>
+            <div class="search_modal"></div>
+            <div class="search_btn_box">
+                <div class="search_btn">
+                    <img src="./img_br/icon_logo/outline_search_white_24dp.png" alt="검색 돋보기" class="search_btn_b">
+                </div>
+                <div class="search_pan">
+                    <input type="text" value="">
+                    <img src="./img_br/icon_logo/outline_search_white_24dp.png" alt="검색 돋보기">
+                </div>
+            </div>
+        <div class="header">
+            <div class="header_top">
+                <div class="h_top_btn">
+                    <a href="#" class="h_top login">LOGIN</a>
+                    <div class="h_top h_top_line">|</div>
+                    <a href="#" class="h_top join">JOIN</a>
+                    <div class="h_top h_top_line">|</div>
+                    <a href="#" class="h_top contact">CONTACT US</a>
+                    <div class="h_top h_top_line">|</div>
+                    <a href="#" class="h_top language">LANGUAGE</a>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="./index.html">로고</a>
+            </div>
+            <div class="nav">
+                <ul class="nav_ul">
+                    <li class="nav_li">
+                        <a href="product.html?cate_no=0">MENU</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="./event.html">EVENT</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="./event.html">FLAVOR OF THE MONTH</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="product.html?cate_no=0">STORE</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="product.html?cate_no=0">ABOUT</a>
+                    </li>
+                </ul>
+                <div class="pan">
+                    <div class="nav_pan_ul">
+                        <div class="nav_pan_li nav_pan1">
+                            <a href="product.html?cate_no=0">아이스크림</a>
+                            <a href="product.html?cate_no=1">아이스크림 케이크</a>
+                            <a href="product.html?cate_no=2">음료</a>
+                            <a href="product.html?cate_no=3">커피</a>
+                            <a href="product.html?cate_no=4">디저트</a>
+                        </div>
+                        <div class="nav_pan_li nav_pan2">
+                            <a href="./event.html">진행중인 이벤트</a>
+                            <a href="./event.html">당첨자 발표</a>
+                            <div class="nav_line"></div>
+                        </div>
+                        <div class="nav_pan_li nav_pan3">
+                            <a href="./event.html">
+                                <img src="./img_br/icon_logo/nav_pan_ice.png" alt="신제품 이미지">
+                            </a>
+                            <div class="nav_line"></div>
+                        </div>
+                        <div class="nav_pan_li nav_pan4">
+                            <a href="product.html?cate_no=0">매장찾기</a>
+                            <a href="product.html?cate_no=0">고객센터</a>
+                        </div>
+                        <div class="nav_pan_li nav_pan5">
+                            <a href="product.html?cate_no=0">공지사항</a>
+                            <a href="product.html?cate_no=0">보도자료</a>
+                            <a href="product.html?cate_no=0">채용정보</a>
+                            <a href="product.html?cate_no=0">점포개설문의</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ham_box show_at_sm">
+                <div class="ham_btn_box">
+                    <div class="line" id="line_top"></div>
+                    <div class="line" id="line_mid"></div>
+                    <div class="line" id="line_bot"></div>
+                </div>
+                <div class="ham_pan">
+                    <div class="close_btn">
+                        <img src="./img_br/icon_logo/close_button.png" alt="메뉴닫기버튼">
+                    </div>
+                    <div class="ham_logo"></div>
+                    <div class="accordion">
+                        <div class="acdion_title">
+                            <p>MENU</p>
+                            <div class="acdion_desc">
+                                <a href="product.html?cate_no=0">
+                                     <p>아이스크림</p>
+                                </a>
+                                <a href="product.html?cate_no=1">
+                                     <p>아이스크림 케이크</p>
+                                </a>
+                                <a href="product.html?cate_no=2">
+                                     <p>음료</p>
+                                </a>
+                                <a href="product.html?cate_no=3">
+                                     <p>커피</p>
+                                </a>
+                                <a href="product.html?cate_no=4">
+                                     <p>디저트</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="acdion_title">
+                            <p>EVENT</p>
+                            <div class="acdion_desc">
+                               <a href="./event.html"> 
+                                   <p>진행중인 이벤트</p>
+                                </a>
+                               <a href="./event.html"> 
+                                   <p>당첨자 발표</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="acdion_title">
+                            <p>FLAVOR OF THE MONTH</p>
+                            <div class="acdion_desc">
+                               <a href="./event.html">
+                                   <p>아이스 홈런볼</p>
+                                </a> 
+                            </div>
+                        </div>
+                        <div class="acdion_title">
+                            <p>STORE</p>
+                            <div class="acdion_desc">
+                                <a href="product.html?cate_no=0">
+                                    <p>매장찾기</p>
+                                </a>
+                                <a href="product.html?cate_no=0">
+                                    <p>고객센터</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="acdion_title">
+                            <p>ABOUT</p>
+                            <div class="acdion_desc">
+                                <a href="product.html?cate_no=0">
+                                    <p>공지사항</p>
+                                </a>
+                                <a href="product.html?cate_no=0">
+                                    <p>보도자료</p>
+                                </a>
+                                <a href="product.html?cate_no=0">
+                                    <p>채용정보</p>
+                                </a>
+                                <a href="product.html?cate_no=0">
+                                    <p>점포개설문의</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="w_1220">
+                <div class="item_info_container">
+                    <!-- <div class="item_info_spon"></div>
+                    <div class="item_info_title">
+                        상품명
+                    </div>
+                    <div class="item_info_desc">
+                        상품설명글
+                    </div>
+                    <div class="item_info_img">
+                        <img src="./img_br/product/ice_cream/1.png" alt="상품이미지">
+                    </div>
+                    <div class="item_buy">
+                        구매하기
+                    </div> -->
+                    <div class="sns_box">
+                        <a href="./index.html" class="sns_icon">
+                            <img src="./img_br/icon_logo/sns_twitter.png" alt="sns공유버튼">
+                        </a>
+                        <a href="./index.html" class="sns_icon">
+                            <img src="./img_br/icon_logo/sns_facebook.png" alt="sns공유버튼">
+                        </a>
+                        <a href="./index.html" class="sns_icon">
+                            <img src="./img_br/icon_logo/sns_instagram.png" alt="sns공유버튼">
+                        </a>
+                        <a href="./index.html" class="sns_icon">
+                            <img src="./img_br/icon_logo/sns_blog.png" alt="sns공유버튼">
+                        </a>
+                    </div>
+                </div>
+                <div class="sec_line"></div>
+                <div class="ice_cream_size">
+                    <div class="ice_cream_size_title">
+                        CONE & CUP
+                    </div>
+                    <div class="size_box">
+                        <div class="item">
+                            <div class="size_img">
+                                <img src="./img_br/product_info_img/ico_c1.gif" alt="컵사이즈">
+                            </div>
+                            <div class="size_desc">
+                                <p>싱글레귤러</p>
+                                <p>
+                                    한가지 맛을 센스있게
+                                    <br>
+                                    즐길수 있는 사이즈
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="size_img">
+                                <img src="./img_br/product_info_img/ico_c2.gif" alt="컵사이즈">
+                            </div>
+                            <div class="size_desc">
+                                <p>싱글킹</p>
+                                <p>
+                                    좋아하는 맛 한가지만 듬뿍
+                                    <br>
+                                    맛볼 수 있는 사이즈
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="size_img">
+                                <img src="./img_br/product_info_img/ico_c3.gif" alt="컵사이즈">
+                            </div>
+                            <div class="size_desc">
+                                <p>더블주니어</p>
+                                <p>
+                                    두가지 맛을 조금씩 한번에
+                                    <br>
+                                    즐기는 사이즈
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="size_img">
+                                <img src="./img_br/product_info_img/ico_c4.gif" alt="컵사이즈">
+                            </div>
+                            <div class="size_desc">
+                                <p>더블레귤러</p>
+                                <p>
+                                    아이스크림 매니아를 위한
+                                    <br>
+                                    진정한 더블 사이즈
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="size_img">
+                                <img src="./img_br/product_info_img/ico_p1.gif" alt="컵사이즈">
+                            </div>
+                            <div class="size_desc">
+                                <p>파인트</p>
+                                <p>
+                                    3가지 맛을 골라먹는 재미가
+                                    <br>
+                                    있는 사이즈
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="size_img">
+                                <img src="./img_br/product_info_img/ico_p2.gif" alt="컵사이즈">
+                            </div>
+                            <div class="size_desc">
+                                <p>쿼터</p>
+                                <p>
+                                    4가지 맛을 골라먹는 재미가
+                                    <br>
+                                    있는 사이즈
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="size_img">
+                                <img src="./img_br/product_info_img/ico_p3.gif" alt="컵사이즈">
+                            </div>
+                            <div class="size_desc">
+                                <p>패밀리</p>
+                                <p>
+                                    5가지 맛을 나눠먹는 재미가
+                                    <br>
+                                    있는 사이즈
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="size_img">
+                                <img src="./img_br/product_info_img/ico_p4.gif" alt="컵사이즈">
+                            </div>
+                            <div class="size_desc">
+                                <p>하프갤런</p>
+                                <p>
+                                    6가지 맛을 나눠먹는 재미가
+                                    <br>
+                                    있는 사이즈
+                                </p>
+                            </div>
+                        </div>
+                        <input type="button" class="btn_slide" id="btn_L" value="《">
+                        <input type="button" class="btn_slide" id="btn_R" value="》"> 
+                    </div>
+                </div>
+                <div class="hot_coffee">
+                    <div class="hot_coffee_title">
+                        HOT COFFEE
+                    </div>
+                    <div class="size_box1">
+                        <div class="item1">
+                            <img src="./img_br/product_info_img/img_hot_coffee_list_1.jpg" alt="핫커피 만들기">
+                        </div>
+                        <div class="item1">
+                            <img src="./img_br/product_info_img/img_hot_coffee_list_2.jpg" alt="핫커피 만들기">
+                        </div>
+                        <div class="item1">
+                            <img src="./img_br/product_info_img/img_hot_coffee_list_3.jpg" alt="핫커피 만들기">
+                        </div>
+                        <div class="item1">
+                            <img src="./img_br/product_info_img/img_hot_coffee_list_4.jpg" alt="핫커피 만들기">
+                        </div>
+                        <div class="item1">
+                            <img src="./img_br/product_info_img/img_hot_coffee_list_5.jpg" alt="핫커피 만들기">
+                        </div>
+                        <div class="item1">
+                            <img src="./img_br/product_info_img/img_hot_coffee_list_6.jpg" alt="핫커피 만들기">
+                        </div>
+                        <div class="item1">
+                            <img src="./img_br/product_info_img/img_hot_coffee_list_7.jpg" alt="핫커피 만들기">
+                        </div>
+                        <input type="button" class="btn_slide1" id="btn_L1" value="《">
+                        <input type="button" class="btn_slide1" id="btn_R1" value="》"> 
+                    </div>
+                </div>
+                <div class="ice_coffee">
+                    <div class="ice_coffee_title">
+                        ICE COFFEE
+                    </div>
+                    <div class="size_box2">
+                        <div class="item2">
+                            <img src="./img_br/product_info_img/img_ice_coffee_list_1.jpg" alt="아이스커피만들기">
+                        </div>
+                        <div class="item2">
+                            <img src="./img_br/product_info_img/img_ice_coffee_list_2.jpg" alt="아이스커피만들기">
+                        </div>
+                        <div class="item2">
+                            <img src="./img_br/product_info_img/img_ice_coffee_list_3.jpg" alt="아이스커피만들기">
+                        </div>
+                        <div class="item2">
+                            <img src="./img_br/product_info_img/img_ice_coffee_list_4.jpg" alt="아이스커피만들기">
+                        </div>
+                        <div class="item2">
+                            <img src="./img_br/product_info_img/img_ice_coffee_list_5.jpg" alt="아이스커피만들기">
+                        </div>
+                        <div class="item2">
+                            <img src="./img_br/product_info_img/img_ice_coffee_list_6.jpg" alt="아이스커피만들기">
+                        </div>
+                        <div class="item2">
+                            <img src="./img_br/product_info_img/img_ice_coffee_list_7.jpg" alt="아이스커피만들기">
+                        </div>
+                        <input type="button" class="btn_slide2" id="btn_L2" value="《">
+                        <input type="button" class="btn_slide2" id="btn_R2" value="》"> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="w_1220">
+                <ul class="ft_ul">
+                    <li class="ft_li">
+                        점포개설문의
+                    </li>
+                    <li class="ft_li">
+                        채용문의
+                    </li>
+                    <li class="ft_li">
+                        윤리신고센터
+                    </li>
+                    <li class="ft_li">
+                        이용약관
+                    </li>
+                    <li class="ft_li">
+                        개인정보처리방침
+                    </li>
+                    <li class="ft_li">
+                        영상정보처리기기운영관리방침
+                    </li>
+                    <li class="ft_li ft_m_r0">
+                        거래희망회사 사전등록
+                    </li>
+                </ul>
+                <div class="ft_logo">
+                    <img src="./img_br/icon_logo/footer_logo.png" alt="푸터로고">
+                </div>
+                <div class="ft_desc">
+                    <p>
+                        사업자 등록번호 : 000-00-00000 비알코리아(주) 대표이사 도세호 서울특별시 서초구 남부순환로 0000(양재동 00-000번지)
+                    </p>
+                    <p>
+                        TEL : 000-000-0000 개인정보관리책임자 : 조아정
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

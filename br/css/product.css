@@ -1,0 +1,165 @@
+.main{
+    overflow: hidden;
+}
+
+.menu_banner{
+    width: 100%;
+    height: 100px;
+    margin: 70px auto;
+
+    position: relative;
+}
+
+.svg_title{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.svg_title_active{
+    display: block;
+}
+
+
+.menu_title{
+    width: 100%;
+    text-align: center;
+    font-family: 'brfont';
+    font-size: 40px;
+    margin: 50px 0;
+}
+
+.product_container{
+    overflow: hidden;
+}
+
+.item{
+    width: calc((100% - 30px) / 4);
+    float: left;
+    letter-spacing: 1px;
+    font-family: 'Cafe24Dangdanghae';
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+.item:nth-child(4n){
+    margin-right: 0;
+}
+
+.item_img{
+    width: 100%;
+
+}
+
+.item_img > img{
+    width: 100%;
+}
+
+.item_title{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: px 0;
+}
+
+.item_tag{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #9c9c9c;
+    padding: 7px 0;
+}
+
+.item_buy{
+    width: 45%;
+    background: #ff7c98;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    padding: 7px 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.item_spon{
+    width: 70px;
+    height: 70px;
+
+    position: absolute;
+    right: 15%;
+    top: 10%;
+    transform: rotate(314deg);
+    opacity: 0;
+    background: url(../img_br/icon_logo/spon.png) no-repeat center / contain;
+}
+
+.item:hover .item_spon{
+    transform: rotate(214deg);
+    transition: all 0.1s;
+    opacity: 1;
+}
+
+.item_spon > img{
+    width: 100%;
+}
+
+.item > a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.item:hover .item_buy{
+    animation: buy_move 0.3s;
+}
+
+@keyframes buy_move {
+    0%{transform: rotate(5deg);}
+    50%{transform: rotate(-5deg);}
+    100%{transform: rotate(5deg);}
+
+}
+
+@media screen and (max-width: 768px){
+    .item{
+        width: calc((100% - 20px) / 3);
+    }
+
+    .item:nth-child(4n){
+        margin-right: 10px;
+    }
+
+    .item:nth-child(3n){
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .item{
+        width: calc((100% - 10px) / 2);
+    }
+
+    .item:nth-child(2n){
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .item{
+        width: 100%;
+    }
+
+    .item:nth-child(2n){
+        margin-right: 10px;
+    }
+
+}

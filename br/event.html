@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배스킨라빈스</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/event.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/event.js"></script>
+    <link rel="shortcut icon" href="./img_br/icon_logo/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="wrap">
+        <div class="point">Click!</div>
+        <a href="./event.html" class="event_page_btn"></a>
+        <div class="search_modal"></div>
+        <div class="search_btn_box">
+            <div class="search_btn">
+                <img src="./img_br/icon_logo/outline_search_white_24dp.png" alt="검색 돋보기" class="search_btn_b">
+            </div>
+            <div class="search_pan">
+                <input type="text" value="">
+                <img src="./img_br/icon_logo/outline_search_white_24dp.png" alt="검색 돋보기">
+            </div>
+        </div>
+        <div class="header sec">
+            <div class="header_top">
+                <div class="h_top_btn">
+                    <a href="#" class="h_top login">LOGIN</a>
+                    <div class="h_top h_top_line">|</div>
+                    <a href="#" class="h_top join">JOIN</a>
+                    <div class="h_top h_top_line">|</div>
+                    <a href="#" class="h_top contact">CONTACT US</a>
+                    <div class="h_top h_top_line">|</div>
+                    <a href="#" class="h_top language">LANGUAGE</a>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="./index.html">로고</a>
+            </div>
+            <div class="nav">
+                <ul class="nav_ul">
+                    <li class="nav_li">
+                        <a href="product.html?cate_no=0">MENU</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="./event.html">EVENT</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="./event.html">FLAVOR OF THE MONTH</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="product.html?cate_no=0">STORE</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="product.html?cate_no=0">ABOUT</a>
+                    </li>
+                </ul>
+                <div class="pan">
+                    <div class="nav_pan_ul">
+                        <div class="nav_pan_li nav_pan1">
+                            <a href="product.html?cate_no=0">아이스크림</a>
+                            <a href="product.html?cate_no=1">아이스크림 케이크</a>
+                            <a href="product.html?cate_no=2">음료</a>
+                            <a href="product.html?cate_no=3">커피</a>
+                            <a href="product.html?cate_no=4">디저트</a>
+                        </div>
+                        <div class="nav_pan_li nav_pan2">
+                            <a href="./event.html">진행중인 이벤트</a>
+                            <a href="./event.html">당첨자 발표</a>
+                            <div class="nav_line"></div>
+                        </div>
+                        <div class="nav_pan_li nav_pan3">
+                            <a href="./event.html">
+                                <img src="./img_br/icon_logo/nav_pan_ice.png" alt="신제품 이미지">
+                            </a>
+                            <div class="nav_line"></div>
+                        </div>
+                        <div class="nav_pan_li nav_pan4">
+                            <a href="product.html?cate_no=0">매장찾기</a>
+                            <a href="product.html?cate_no=0">고객센터</a>
+                        </div>
+                        <div class="nav_pan_li nav_pan5">
+                            <a href="product.html?cate_no=0">공지사항</a>
+                            <a href="product.html?cate_no=0">보도자료</a>
+                            <a href="product.html?cate_no=0">채용정보</a>
+                            <a href="product.html?cate_no=0">점포개설문의</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ham_box show_at_sm">
+                <div class="ham_btn_box">
+                    <div class="line" id="line_top"></div>
+                    <div class="line" id="line_mid"></div>
+                    <div class="line" id="line_bot"></div>
+                </div>
+                <div class="ham_pan">
+                    <div class="close_btn">
+                        <img src="./img_br/icon_logo/close_button.png" alt="메뉴닫기버튼">
+                    </div>
+                    <div class="ham_logo"></div>
+                    <div class="accordion">
+                        <div class="acdion_title">
+                            <p>MENU</p>
+                            <div class="acdion_desc">
+                                <a href="product.html?cate_no=0">
+                                     <p>아이스크림</p>
+                                </a>
+                                <a href="product.html?cate_no=1">
+                                     <p>아이스크림 케이크</p>
+                                </a>
+                                <a href="product.html?cate_no=2">
+                                     <p>음료</p>
+                                </a>
+                                <a href="product.html?cate_no=3">
+                                     <p>커피</p>
+                                </a>
+                                <a href="product.html?cate_no=4">
+                                     <p>디저트</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="acdion_title">
+                            <p>EVENT</p>
+                            <div class="acdion_desc">
+                               <a href="./event.html"> 
+                                   <p>진행중인 이벤트</p>
+                                </a>
+                               <a href="./event.html"> 
+                                   <p>당첨자 발표</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="acdion_title">
+                            <p>FLAVOR OF THE MONTH</p>
+                            <div class="acdion_desc">
+                               <a href="./event.html">
+                                   <p>아이스 홈런볼</p>
+                                </a> 
+                            </div>
+                        </div>
+                        <div class="acdion_title">
+                            <p>STORE</p>
+                            <div class="acdion_desc">
+                                <a href="product.html?cate_no=0">
+                                    <p>매장찾기</p>
+                                </a>
+                                <a href="product.html?cate_no=0">
+                                    <p>고객센터</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="acdion_title">
+                            <p>ABOUT</p>
+                            <div class="acdion_desc">
+                                <a href="product.html?cate_no=0">
+                                    <p>공지사항</p>
+                                </a>
+                                <a href="product.html?cate_no=0">
+                                    <p>보도자료</p>
+                                </a>
+                                <a href="product.html?cate_no=0">
+                                    <p>채용정보</p>
+                                </a>
+                                <a href="product.html?cate_no=0">
+                                    <p>점포개설문의</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="sec sec1">
+                <div class="box ice_cream1"></div>
+                <div class="sec1_icon1"></div>
+                <div class="sec1_icon2"></div>
+                <div class="sec1_icon3"></div>
+            </div>
+            <div class="sec sec2">
+                <div class="sec2_mini_title"></div>
+                <div class="sec2_title">
+                    DOUBLE UP
+                </div>
+                <div class="box ice_cream2"></div>
+                <div class="sec2_double">
+                    <img src="./img_br/event/fom_2021_24.png" alt="더블업이미지">
+                    <p>
+                        이달의 맛
+                        <br>
+                        아빠는 딸바봉 선택 시
+                        <br>
+                        500원 추가하면 싱글레귤러를
+                        <br>
+                        더블주니어로 더블 업!
+                    </p>
+                </div>
+                <div class="sec2_icon1"></div>
+                <div class="sec2_icon2"></div>
+                <div class="sec2_icon3"></div>
+                <div class="sec2_icon4"></div>
+                <div class="sec2_icon5"></div>
+                <div class="sec2_icon6"></div>
+                <div class="sec2_icon7"></div>
+            </div>
+            <div class="sec sec3">
+                <h1 class="sec3_mini_title">
+                    신상 베라 최고의 인기 상품 선정
+                </h1>
+                <h1 class="sec3_title">초코나무 숲</h1>
+                <div class="box ice_cream3"></div>
+                <div class="sec3_crown">
+                    <img src="./img_br/event/crown.png" alt="왕관아이콘">
+                </div>
+            </div>
+            <div class="sec sec4">
+                <div class="sec4_mini_title">
+                    블랙소르베
+                </div>
+                <div class="sec4_title">
+                    <p>BLACK</p>
+                    <p>Sorbet</p>
+                </div>
+                <div class="box ice_cream4"></div>
+                <div class="sec4_desc">
+                    <p>
+                        반전 매력이 가득! 까만 아이스크림에
+                        <br>
+                        짜릿한 상큼함이 가득!
+                    </p>
+                </div>
+                <div class="sec4_icon1"></div>
+                <div class="sec4_icon2"></div>
+                <div class="sec4_icon3"></div>
+                <div class="sec4_icon4"></div>
+                <div class="sec4_icon5"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="w_1220">
+                <ul class="ft_ul">
+                    <li class="ft_li">
+                        점포개설문의
+                    </li>
+                    <li class="ft_li">
+                        채용문의
+                    </li>
+                    <li class="ft_li">
+                        윤리신고센터
+                    </li>
+                    <li class="ft_li">
+                        이용약관
+                    </li>
+                    <li class="ft_li">
+                        개인정보처리방침
+                    </li>
+                    <li class="ft_li">
+                        운영관리방침
+                    </li>
+                    <li class="ft_li ft_m_r0">
+                        거래희망회사 사전등록
+                    </li>
+                </ul>
+                <div class="ft_logo">
+                    <img src="./img_br/icon_logo/footer_logo.png" alt="푸터로고">
+                </div>
+                <div class="ft_desc">
+                    <p>
+                        사업자 등록번호 : 000-00-00000 비알코리아(주) 대표이사 도세호 서울특별시 서초구 남부순환로 0000(양재동 00-000번지)
+                    </p>
+                    <p>
+                        TEL : 000-000-0000 개인정보관리책임자 : 조아정
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

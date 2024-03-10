@@ -1,0 +1,431 @@
+.sec1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: url(../img_br/event/flavor_img_1.png) no-repeat center / cover;
+
+    position: relative;
+}
+
+.sec1_icon1{
+    width: 347px;
+    height: 400px;
+    background: url(../img_br/event/side_img_01.png) no-repeat center / cover;
+    position: absolute;
+    left: 14%;
+    top: 201px;
+}
+
+.sec1_icon2{
+    width: 200px;
+    height: 200px;
+    background: url(../img_br/event/side_img_02.png) no-repeat center / cover;
+    position: absolute;
+    left: 21%;
+    bottom: 0;
+}
+
+.sec1_icon3{
+    width: 150px;
+    height: 145px;
+    background: url(../img_br/event/side_img_03.png) no-repeat center / cover;
+    position: absolute;
+    right: 27%;
+    bottom: 407px;
+}
+
+.sec2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    /* background: url(../img_br/event/event_bg2.png) no-repeat center / cover; */
+    background: #fed0db;
+}
+
+.sec2_mini_title{
+    width: 300px;
+    height: 50px;
+    background: url(../img_br/event/size_event.png) no-repeat center / contain;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.sec2_title{
+    width: 100%;
+    text-align: center;
+    color: #2e0f17;
+    font-weight: 900;
+    font-size: 160px;
+    font-family: 'RixYeoljeongdo_Regular';
+}
+
+.sec2_double{
+    width: 500px;
+    height: 500px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sec2_double > img{
+    position: absolute;
+    left: 50%;
+    top: -370px;
+    transform: translateX(-50%);
+}
+
+.sec2_double > p{
+    position: absolute;
+    left: -346px;
+    top: 10px;
+    text-align: right;
+    font-size: 25px;
+    font-family: '양진체';
+    line-height: 40px;
+}
+
+.sec2_icon1{
+    width: 350px;
+    height: 292px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    background: url(../img_br/event/sec2_icon.png) no-repeat center / cover;
+}
+
+.sec2_icon2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 6%;
+    bottom: 170px;
+    background: url(../img_br/event/sec2_icon2.png) no-repeat center / cover;
+}
+
+.sec2_icon3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 19%;
+    bottom: 370px;
+    background: url(../img_br/event/sec2_icon3.png) no-repeat center / cover;
+}
+
+.sec2_icon4{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 30%;
+    bottom: 80px;
+    background: url(../img_br/event/sec2_icon4.png) no-repeat center / cover;
+}
+
+.sec2_icon5{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 10%;
+    top: 80px;
+    background: url(../img_br/event/sec2_icon2.png) no-repeat center / cover;
+}
+
+.sec2_icon6{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 21%;
+    top: 360px;
+    background: url(../img_br/event/sec2_icon2.png) no-repeat center / cover;
+}
+
+.sec2_icon7{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 4%;
+    top: 510px;
+    background: url(../img_br/event/sec2_icon3.png) no-repeat center / cover;
+    transform: rotate(171deg);
+
+}
+
+.sec3 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: url(../img_br/event/Lovepik_com-610200371-Free\ forest\ decoration\ background\ illustration.png) no-repeat center / cover;
+    background-color: #FBEFD8;
+}
+
+
+.sec3_title{
+    width: 100%;
+    text-align: center;
+    font-size: 170px;
+    font-family: 'ROKABold';
+    font-weight: 400;
+    letter-spacing: 28px;
+    color: #418241;
+    margin: 0;
+}
+
+.sec3_mini_title{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'ROKABold';
+    letter-spacing: 28px;
+    color: #5f2828;
+    margin-top: 50px;
+}
+.sec3_crown{
+    width: 700px;
+    height: 700px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -70px;
+    left: 46%;
+    transform: translateX(-50%);
+}
+
+.sec3_crown > img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(50deg);
+}
+
+.sec4 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: #ffe900;
+
+    position: relative;
+}
+
+.sec4_title{
+    width: 100%;
+    text-align: center;
+    font-size: 155px;
+    font-family: 'SEBANG_Gothic_Bold';
+    letter-spacing: 9px;
+    color: #1c1716;
+    margin: 0;
+}
+
+.sec4_title > p:nth-child(2){
+    color: #ed018a;
+    position: absolute;
+    right: 23%;
+    top: 200px;
+    transform: rotate(-25deg);
+    font-size: 119px;
+    font-family: 'InkLipquid'
+}
+
+.sec4_mini_title{
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'SEBANG_Gothic_Bold';
+    letter-spacing: 11px;
+    color: #1c1716;
+    margin-top: 50px;
+}
+
+.sec4_desc{
+    position: relative;
+}
+
+.sec4_desc > p{
+    position: absolute;
+    right: 14%;
+    top: 200px;
+    text-align: left;
+    font-size: 26px;
+    font-family: '양진체';
+    line-height: 40px;
+}
+
+.box {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    /* top: 100px; */
+    left: 50%;
+    transform: translateX(-50%);
+/* //////////////////////// */
+    bottom: 0;
+}
+
+.sec4_icon1{
+    width: 309px;
+    height: 195px;
+    position: absolute;
+    left: 8%;
+    top: 0;
+    background: url(../img_br/event/sec4_icon.png) no-repeat center / contain;
+}
+
+.sec4_icon2{
+    width: 294px;
+    height: 298px;
+    position: absolute;
+    left: 0;
+    bottom: 234px;
+    background: url(../img_br/event/sec4_icon2.png) no-repeat center / contain;
+}
+
+.sec4_icon3{
+    width: 280px;
+    height: 151px;
+    position: absolute;
+    left: 24%;
+    bottom: 0;
+    background: url(../img_br/event/sec4_icon3.png) no-repeat center / contain;
+}
+
+.sec4_icon4{
+    width: 390px;
+    height: 251px;
+    position: absolute;
+    right: 5%;
+    bottom: 0px;
+    background: url(../img_br/event/sec4_icon4.png) no-repeat center / cover;
+}
+
+.sec4_icon5{
+    width: 260px;
+    height: 251px;
+    position: absolute;
+    right: 5%;
+    top: 30px;
+    background: url(../img_br/event/sec4_icon5.png) no-repeat center / cover;
+}
+
+.ice_cream1 { background: url(../img_br/product/ice_cream/19.png) no-repeat center / cover}
+.ice_cream2 { background: url(../img_br/product/ice_cream/3.png) no-repeat center / cover}
+.ice_cream3 { background: url(../img_br/product/ice_cream/10.png) no-repeat center / cover}
+.ice_cream4 { background: url(../img_br/product/ice_cream/2.png) no-repeat center / cover}
+
+.footer{
+    margin-top: 0;
+}
+
+@media screen and (max-width:1155px){
+
+    .box{
+        width: 500px;
+        height: 500px;
+    }
+
+    .sec2_double > img{
+        top: -240px;
+    }
+
+    .sec1_icon1,
+    .sec1_icon2,
+    .sec1_icon3{
+        display: none;
+    }
+
+    .sec2_icon1,
+    .sec2_icon2,
+    .sec2_icon3,
+    .sec2_icon4,
+    .sec2_icon5,
+    .sec2_icon6,
+    .sec2_icon7{
+        display: none;
+    }
+
+    .sec2_title{
+        font-size: 120px;
+    }
+
+    .sec2_double > p{
+        display: none;
+    }
+
+    .sec3_title{
+        font-size: 120px;
+    }
+
+    .sec3_mini_title{
+        font-size: 22px;
+    }
+
+    .sec3_crown{
+        display: none;
+    }
+
+    .sec4_desc > p{
+        display : none;
+    }
+}
+
+@media screen and (max-width : 900px) {
+
+    .sec4_icon1,
+    .sec4_icon2,
+    .sec4_icon3,
+    .sec4_icon4,
+    .sec4_icon5{
+        display: none;
+    }
+}
+
+@media screen and (max-width : 480px){
+    .box{
+        width: 500px;
+        height: 500px;
+    }
+
+    .sec1_icon2,
+    .sec1_icon3{
+        display: none;
+    }
+
+    .sec2_title{
+        font-size: 60px;
+    }
+
+    .sec2_double{
+        display: none;
+    }
+
+    .sec3_title{
+        font-size: 60px;
+        letter-spacing: 0;
+    }
+
+    .sec3_mini_title{
+        letter-spacing: 0;
+    }
+
+    .sec3_crown{
+        display: none;
+    }
+
+    .sec4_title{
+        font-size: 90px;
+    }
+
+    .sec4_title > p:nth-child(2){
+    position: static;
+    transform: rotate(0deg);
+    }
+}
